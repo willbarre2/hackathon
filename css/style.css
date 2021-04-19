@@ -191,4 +191,17 @@
         top: 369px;
     }
 }
+
+/* #bg-header{
+    background: url(../img/illustration_home_onlinebio.jpg);
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+} */
+
+#img-header{
+    position: absolute;
+    width: 100vw;
+    bottom: 10vh;
+}
     
