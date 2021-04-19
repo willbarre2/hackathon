@@ -26,7 +26,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(255, 255, 255);
 }
 
 #menu{
@@ -51,8 +51,8 @@
 
 #btn-boutique {
     position: absolute;
-    left: 84vw;
     top: 31px;
+    right: 8vw;
 }
 
 #btn-boutique a{
@@ -87,7 +87,11 @@
 
 @media (max-width: 992px){
     #btn-boutique{
-        left: 79vw;
+        right: 3vw;
+    }
+
+    #btn-boutique a{
+        padding: 7px 12px;
     }
 }
 
@@ -95,11 +99,33 @@
     
     #btn-burger{
         display: block;
+        width: 40px;
+        height: 40px;
         position: absolute;
         top: 20px;
         left: 20px;
         z-index: 3;
+        background: url(../img/icon_burger.svg);
+    }
 
+    #btn-burger.is-closed{
+        background: url(../img/icon_burger.svg);
+    }
+
+    #btn-burger.is-opened{
+        background: url(../img/icon_croix.svg);
+    }
+
+    #menu{
+        margin-left: 50px;
+    }
+
+    #menu li{
+        margin: 50px 0;
+    }
+
+    #menu li a{
+        font-size: 2rem;
     }
 
     #nav-bar{
@@ -122,16 +148,47 @@
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-}
+    }
     
     #menu{
         display: block;
     }
     
     #btn-boutique{
-        top: 50px;
-        left: 74vw;
+        top: 228px;
+        right: 5vw;
     }
     
+}
+
+@media (max-width: 576px){
+    #nav-bar{
+        height: 367px;
+    }
+
+    #btn-boutique{
+        top: 300px;
+        left: 90px;
+    }
+}
+
+@media (max-width: 338px){
+    #nav-bar{
+        height: 388px;
+    }
+
+    #btn-boutique{
+        top: 330px;
+    }
+}
+
+@media (max-width: 287px){
+    #nav-bar{
+        height: 428px;
+    }
+
+    #btn-boutique{
+        top: 369px;
+    }
 }
     
