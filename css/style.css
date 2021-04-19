@@ -1,0 +1,16 @@
+:root{
+    --gris: #434343;
+    --orange: #F89B31;
+}
+
+@font-face {
+    font-family: "Rale";
+    src: url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RaleB";
+    src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
+}
+
+
