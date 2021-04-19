@@ -13,4 +13,78 @@
     src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
+/* header */
+
+/* navbar */
+#nav-bar{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#menu{
+    display: flex;
+}
+
+#menu li{
+    list-style: none;
+    margin: 1rem 3vw;
+}
+
+#menu li a{
+    text-decoration: none;
+    font-family: 'Rale', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#menu li a:hover{
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+#btn-boutique {
+    position: absolute;
+    left: 84vw;
+    top: 2.5vh;
+    padding: 14px 12px;
+    color: white;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+
+#btn-boutique:hover{
+    background-color: white;
+}
+
+#btn-boutique a{
+    padding: 14px 12px;
+    text-decoration: none;
+    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btn-boutique a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#btn-boutique a:hover{
+    color: var(--orange);
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
 
