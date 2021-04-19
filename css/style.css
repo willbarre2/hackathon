@@ -13,6 +13,10 @@
     src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
+body{
+    font-family: 'Rale', Tahoma, Geneva, Verdana, sans-serif
+}
+
 /* header */
 
 /* navbar */
@@ -23,10 +27,11 @@
 
 #nav-bar{
     position: fixed;
+    top: 0;
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 
 #menu{
@@ -192,16 +197,47 @@
     }
 }
 
-/* #bg-header{
-    background: url(../img/illustration_home_onlinebio.jpg);
-    width: 100vw;
-    height: 90vh;
-    background-size: cover;
-} */
+/* contenu header */
+header{
+    height: 70vh;
+}
 
-#img-header{
+#bg-header{
     position: absolute;
     width: 100vw;
     bottom: 10vh;
+    z-index: -1;
+}
+
+#img-header{
+    position: absolute;
+    top: -26px;
+    left: 8rem;
+    width: 150px;
+    z-index: 3;
 }
     
+header h1{
+    margin: 13rem 0 0 8rem ;
+    color: var(--orange);
+    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75px;
+} 
+
+header p{
+    margin: 13px 0 0 8rem ;
+    color: var(--gris);
+    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+
+/* section 1 */
+section:first-child{
+    width: 100vw;
+}
+
+#sect1h2{
+    margin: 1rem auto;
+}
+

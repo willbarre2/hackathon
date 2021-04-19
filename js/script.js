@@ -1,3 +1,13 @@
+const navBar = document.getElementById("nav-bar");
+
+window.addEventListener("scroll", (event) => {
+  if (window.scrollY >= 300) {
+    navBar.style.backgroundColor = "white";
+  } else if (window.scrollY < 300) {
+    navBar.style.backgroundColor = "transparent";
+  }
+});
+
 $(document).ready(function () {
   $("#btn-burger").click(function () {
     $("#nav-bar").toggleClass("isOpen");
