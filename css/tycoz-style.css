@@ -22,13 +22,14 @@ body {
 .section-container {
   width: 80%;
   margin: 0 auto;
+  max-width: 650px;
 }
 section:nth-child(2n + 1) {
   font-size: 0.9rem;
   color: var(--gris-clair);
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  line-height: 1.2;
+  padding-bottom: 2rem;
+  line-height: 1.3;
 }
 
 section:nth-child(2n) {
@@ -37,7 +38,7 @@ section:nth-child(2n) {
   color: white;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .section-container img {
@@ -58,6 +59,7 @@ section:nth-child(2n) {
   margin-top: 5rem;
   margin-bottom: 3rem;
 }
+
 .section1-heading {
   font-family: RaleB;
   text-align: center;
@@ -109,10 +111,15 @@ section:nth-child(2n) {
 }
 
 /* Dernière section - Nos produits */
+
+section:nth-child(2n).section8 {
+  padding-bottom: 4rem;
+}
 .section8-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 500px;
 }
 
 .section8-header .order-btn {
@@ -142,6 +149,12 @@ section:nth-child(2n) {
 
 .swiper-slide {
   background-size: cover;
+  background-position: center;
+}
+.swiper-slide a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
 
 .swiper-slide:nth-child(1) {
@@ -179,6 +192,95 @@ section:nth-child(2n) {
   background-image: url("../img/ty-coz/slider/pourpier.jpg");
 }
 
-[class^="swiper-button"] {
+[class^="swiper-button"],
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
   opacity: 0;
 }
+
+.swiper-pagination {
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  background-color: #4e8b07;
+  width: 12px;
+  height: 12px;
+  margin-left: 2px;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+}
+
+.grid-container {
+  display: none;
+}
+@media (min-width: 56rem) {
+  .slider-container {
+    display: none;
+  }
+  .grid-container {
+    display: block;
+    width: 90%;
+    height: 800px;
+    margin: 2rem auto 0;
+    padding: 0.5rem;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat (12, 1fr);
+    max-width: 900px;
+    /* overflow: hidden; */
+  }
+
+  .grid-item {
+    background-size: cover;
+    background-position: center;
+  }
+  /* first column */
+  .grid-item:nth-child(1) {
+    background-image: url("../img/ty-coz/slider/ail.jpg");
+    grid-row: 1/4;
+  }
+  .grid-item:nth-child(4) {
+    background-image: url("../img/ty-coz/slider/potiron.jpg");
+    grid-row: 4/8;
+  }
+  .grid-item:nth-child(7) {
+    background-image: url("../img/ty-coz/slider/navets-bottes.jpg");
+    grid-row: 8/12;
+  }
+  /* Second column */
+  .grid-item:nth-child(2) {
+    background-image: url("../img/ty-coz/slider/rhubarbe.jpg");
+    grid-row: 1/5;
+  }
+  .grid-item:nth-child(5) {
+    background-image: url("../img/ty-coz/slider/panais.jpg");
+    grid-row: 5/9;
+  }
+  .grid-item:nth-child(8) {
+    background-image: url("../img/ty-coz/slider/courgettes-rondes.jpg");
+    grid-row: 9/12;
+  }
+  /* Third column */
+  .grid-item:nth-child(3) {
+    background-image: url("../img/ty-coz/slider/patate-douce.jpg");
+    grid-row: 1/4;
+  }
+  .grid-item:nth-child(6) {
+    background-image: url("../img/ty-coz/slider/pourpier.jpg");
+    grid-row: 4/7;
+  }
+  .grid-item:nth-child(9) {
+    background-image: url("../img/ty-coz/slider/courgettes-jaunes.jpg");
+    grid-row: 7/12;
+  }
+} ;
