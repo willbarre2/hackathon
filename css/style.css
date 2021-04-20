@@ -13,6 +13,9 @@
     src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
+body{
+    font-family: "Rale";
+}
 /* ************** Section cards ******** */
 
 .section-cards .cards {
@@ -31,11 +34,11 @@
     justify-content: center;
     margin: 0 44px 0 44px;
     background-color: #f89b31;
-    height: 400px;
-    width: 350px;
+    height: 450px;
+    width: 320px;
     border-radius: 10px;
     transition: .4s ease-in-out;
-    margin: 25px;
+    margin: 40px;
 }
 
 .section-cards .cards img {
@@ -46,13 +49,18 @@
 }
 
 .section-cards .cards h5,p {
-    text-align: start;
-    padding-left: 10px;
+    padding: 5px 40px;
     color: white;
 }
 
+.section-cards p {
+    font-size: 1.5rem;
+    padding: 0 10px;
+    margin: 0;
+}
 .section-cards h5 {
-    font-size: 1.2rem;
+    margin:20px 0 5px 0;
+    font-size: 1.7rem;
 }
 
 .section-cards .cards div:hover {
@@ -76,89 +84,127 @@ footer .contact,.livraison {
     display: block;
     color: white;
 }
+footer .livraison {
+    width: 219px;
+    padding: 0 20px;
+}
+
+footer .livraison li {
+    line-height: 1.5em;
+    padding-top: 10px;
+}
 footer a:visited{
     text-decoration: none;
 }
 footer .contact li{
-    padding-top: 10px;
+    padding-top: 14px;
 }
-footer .livraison li:nth-child(2) {
-    margin-top: 30px;
+footer .contact {
+    padding-top: 20px;
 }
 footer ul {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    padding: 0 50px;
 }
 footer p {
     font-size: 15px;
+    padding-left: 0;
 }
 footer img {
     height: 140px;
     width: auto;
 }
 footer #icon img{
-    height: 25px;
+    height: 30px;
     padding-right: 15px;
 }
-footer #icon ul {
-    justify-content: flex-start;
-    padding: 45px 0px 0 0;
-}
+
 footer #icon {
-    padding-left: 20px;
-    display: block;
-    margin-top: 60px;
+    display: inline-flex;
+    padding: 0;
 }
 .map img {
-    height: 120px;
+    height: 110px;
 }
-#btn-boutique-footer {
-    top: 31px;
-    right: 8vw;
-}
-#btn-boutique-footer a{
-    padding: 14px 24px;
-    background-color: var(--orange);
-    border: 2px solid var(--orange);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    text-decoration: none;
-    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-}
-#btn-boutique-footer a:visited{
-    text-decoration: none;
-    color: white;
-}
-#btn-boutique-footer a:hover{
-    color: var(--orange);
-    background-color: white;
-}
+
 footer a {
     color: white;
 }
+
+.t2 {
+    display: none;
+}
+
+@media screen and (max-width : 1014px) {
+    footer .livraison {
+        padding: 0;
+        width: auto;
+    }
+}
 @media screen and (max-width : 918px) {
+    footer ul,li,p{
+        display: block;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    footer .livraison {
+        width: auto;
+    }
+    footer #icon ul{
+        display: inline-flex;
+        padding: 0;
+    }
+    .t1 {
+        display: none;
+    }
+    .t2 {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width : 918px) {
     footer ul {
         display: block;
         text-align: center;
-        padding-left: 0;
+        padding: 0;
         padding-bottom: 20px;
     }
     footer .contact,.livraison,.map{
         padding-left: 0;
     }
+    footer .livraison {
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+    footer li{
+        padding-bottom: 10px;
+    }
     footer #icon ul{
         display: inline-flex;
-        padding-left: 0;
+        padding: 0;
     }
     footer #icon li {
         padding: 0 10px 0 10px;
@@ -167,6 +213,7 @@ footer a {
         padding:0 0 10px 0;
     }
     footer p {
+        padding: 0;
         text-align: center;
     }
-}
+} */
