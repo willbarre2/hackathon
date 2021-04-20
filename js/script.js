@@ -1,14 +1,14 @@
 const navBar = document.getElementById("nav-bar");
 
 if (window.innerWidth <= 768) {
-  navBar.style.backgroundColor = "white";
+  navBar.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
 } else if (window.innerWidth > 768) {
   navBar.style.backgroundColor = "transparent";
 }
 
 window.addEventListener("scroll", (event) => {
   if (window.scrollY >= 100 || window.innerWidth <= 768) {
-    navBar.style.backgroundColor = "white";
+    navBar.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
   } else if (window.scrollY < 100 || window.innerWidth > 768) {
     navBar.style.backgroundColor = "transparent";
   }
