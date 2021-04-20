@@ -191,15 +191,12 @@ body{
 }
 
 /* contenu header */
-header{
-    height: 70vh;
-}
-
 #bg-header{
-    position: absolute;
     width: 100%;
-    bottom: 10vh;
-    z-index: -1;
+    height: 90vh;
+    background-image: url(../img/illustration_home_onlinebio.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #img-header{
@@ -209,41 +206,55 @@ header{
     width: 150px;
     z-index: 2;
 }
+
+#cont-header{
+    width: 600px;
+    position: relative;
+    top: 30vh;
+    left: 8rem;
+    margin: 0;
+}
     
 header h1{
-    margin: 13rem 0 0 8rem ;
     color: var(--orange);
     font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100px;
+    margin: 0;
 } 
 
 header p{
-    margin: 13px 0 0 8rem ;
     color: var(--gris);
     font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
+    margin: 0;
 }
 
 
 
 
 @media (max-width: 992px){
+
+
     #img-header{
         left: 4rem;
     }
 
+    #cont-header{
+        width: 480px;
+        left: 8rem;
+    }
+
     header h1{
-        margin: 13rem 0 0 4rem ;
         font-size: 80px;
     } 
     
     header p{
-        margin: 13px 0 0 4rem ;
         font-size: 24px;
     }
 }
 
 @media (max-width: 768px){
+
     #img-header{
         position: relative;
         left: 0;
@@ -255,15 +266,16 @@ header p{
         justify-content: space-around;
     }
 
-    
+    #cont-header{
+        width: 480px;
+        left: 4rem;
+    }
 
     header h1{
-        margin: 17rem 0 0 4rem ;
         font-size: 70px;
     } 
     
     header p{
-        margin: 13px 0 0 4rem ;
         font-size: 21px;
     }
 }
@@ -274,25 +286,38 @@ header p{
         left: -40px;
     }
 
+    #cont-header{
+        width: 300px;
+        left: 4rem;
+    }
+
     header h1{
-        margin: 17rem 0 0 4rem ;
         font-size: 50px;
     } 
     
     header p{
-        margin: 13px 0 0 4rem ;
         font-size: 15px;
     }
 }
 
 @media (max-width: 400px){
+
+    #bg-header{
+        height: 60vh;
+    }
+
+    #cont-header{
+        width: 235px;
+        top: 15vw;
+        left: 2rem;
+    }
+
     header h1{
-        margin: 17rem 0 0 2rem ;
+
         font-size: 40px;
     } 
     
     header p{
-        margin: 13px 0 0 2rem ;
         font-size: 12px;
     }
 }
@@ -302,11 +327,22 @@ header p{
         top: -6px;
         width: 70px;
     }
+
+    #cont-header{
+        width: 235px;
+        left: 2rem;
+    }
+
+    header h1{
+
+        font-size: 30px;
+    } 
+    
+    header p{
+        font-size: 9px;
+    }
 }
 
-@media (max-width: 287px){
-    
-}
 
 /* section 1 */
 section:first-child{
@@ -314,5 +350,6 @@ section:first-child{
 }
 
 #sect1h2{
-    margin: 1rem auto;
+    width: 100%;
+    text-align: center;
 }
