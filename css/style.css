@@ -2,6 +2,7 @@
     --gris: #434343;
     --orange: #F89B31;
     --black: #181617;
+
 }
 
 @font-face {
@@ -358,3 +359,155 @@ section:first-child{
     width: 100%;
     text-align: center;
 }
+
+/* ************** Section cards ******** */
+
+.section-cards .cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.section-cards .cards div {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 44px 0 44px;
+    background-color: var(--orange);
+    height: 450px;
+    width: 320px;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+    margin: 40px;
+}
+
+.section-cards .cards img {
+    height: 200px;
+    width: 200px;
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 20px;
+}
+
+.section-cards .cards h5,p {
+    padding: 5px 40px;
+    color: white;
+}
+
+.section-cards p {
+    font-size: 1.5rem;
+    padding: 0 10px;
+    margin: 0;
+}
+.section-cards h5 {
+    margin:20px 0 5px 0;
+    font-size: 1.7rem;
+}
+
+.section-cards .cards div:hover {
+    -webkit-box-shadow: 0px 3px 15px 5px #000000; 
+    box-shadow: 0px 3px 15px 5px #000000;
+    transform: scale(1.05);
+}  
+
+/* *********** Footer  *********** */
+footer li {
+    list-style: none;
+}
+footer {
+    color: white;
+    background-color: var(--black);
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+}
+footer .contact,.livraison {
+    display: block;
+    color: white;
+}
+footer .livraison {
+    width: 219px;
+    padding: 0 20px;
+}
+
+footer .livraison li {
+    line-height: 1.5em;
+    padding-top: 10px;
+}
+footer a:visited{
+    text-decoration: none;
+}
+footer .contact li{
+    padding-top: 14px;
+}
+footer .contact {
+    padding-top: 20px;
+}
+footer ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+footer p {
+    font-size: 15px;
+    padding-left: 0;
+}
+footer img {
+    height: 140px;
+    width: auto;
+}
+footer #icon img{
+    height: 30px;
+    padding-right: 15px;
+}
+
+footer #icon {
+    display: inline-flex;
+    padding: 0;
+}
+.map img {
+    height: 110px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .t2 {
+    display: none;
+}
+
+@media screen and (max-width : 1014px) {
+    footer .livraison {
+        padding: 0;
+        width: auto;
+    }
+}
+
+@media screen and (max-width : 918px) {
+    footer ul,li,p{
+        display: block;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    footer .livraison {
+        width: auto;
+    }
+    footer #icon ul{
+        display: inline-flex;
+        padding: 0;
+    }
+    footer .t1 {
+        display: none;
+    }
+    footer .t2 {
+        display: block;
+    }
+}
+
