@@ -130,3 +130,55 @@ section:nth-child(2n) {
   color: #fff;
   background-color: var(--orange);
 }
+
+/* Slider */
+.swiper-container {
+  margin-top: 2rem;
+  width: 90%;
+  min-height: 200px;
+  height: 50vh;
+  max-width: 500px;
+}
+
+.swiper-slide {
+  background-size: cover;
+}
+
+.swiper-slide:nth-child(1) {
+  background-image: url("../img/ty-coz/slider/ail.jpg");
+}
+.swiper-slide:nth-child(2) {
+  background-image: url("../img/ty-coz/slider/tomates.jpg");
+}
+
+.swiper-slide:nth-child(3) {
+  background-image: url("../img/ty-coz/slider/courgettes-jaunes.jpg");
+}
+.swiper-slide:nth-child(4) {
+  background-image: url("../img/ty-coz/slider/navets-bottes.jpg");
+}
+
+.swiper-slide:nth-child(5) {
+  background-image: url("../img/ty-coz/slider/courgettes-rondes.jpg");
+}
+.swiper-slide:nth-child(6) {
+  background-image: url("../img/ty-coz/slider/patate-douce.jpg");
+}
+.swiper-slide:nth-child(7) {
+  background-image: url("../img/ty-coz/slider/panais.jpg");
+}
+
+.swiper-slide:nth-child(8) {
+  background-image: url("../img/ty-coz/slider/rhubarbe.jpg");
+}
+.swiper-slide:nth-child(9) {
+  background-image: url("../img/ty-coz/slider/potiron.jpg");
+}
+
+.swiper-slide:nth-child(10) {
+  background-image: url("../img/ty-coz/slider/pourpier.jpg");
+}
+
+[class^="swiper-button"] {
+  opacity: 0;
+}
