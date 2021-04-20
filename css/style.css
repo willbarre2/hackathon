@@ -13,6 +13,53 @@
     src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
+/* ************** Section cards ******** */
+
+.section-cards .cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.section-cards .cards div {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 44px 0 44px;
+    background-color: #f89b31;
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+    margin: 25px;
+}
+
+.section-cards .cards img {
+    height: 200px;
+    width: 200px;
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 20px;
+}
+
+.section-cards .cards h5,p {
+    text-align: start;
+    padding-left: 10px;
+    color: white;
+}
+
+.section-cards h5 {
+    font-size: 1.2rem;
+}
+
+.section-cards .cards div:hover {
+    -webkit-box-shadow: 0px 3px 15px 5px #000000; 
+    box-shadow: 0px 3px 15px 5px #000000;
+    transform: scale(1.05);
+}  
 
 /* *********** Footer  *********** */
 footer li {
@@ -60,6 +107,7 @@ footer #icon ul {
     padding: 45px 0px 0 0;
 }
 footer #icon {
+    padding-left: 20px;
     display: block;
     margin-top: 60px;
 }
@@ -98,7 +146,7 @@ footer #icon {
 footer a {
     color: white;
 }
-@media screen and (max-width : 909px) {
+@media screen and (max-width : 918px) {
     footer ul {
         display: block;
         text-align: center;
@@ -117,5 +165,8 @@ footer a {
     }
     footer #icon img {
         padding:0 0 10px 0;
+    }
+    footer p {
+        text-align: center;
     }
 }
