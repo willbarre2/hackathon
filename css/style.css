@@ -27,6 +27,7 @@ body{
 
 #nav-bar{
     position: fixed;
+    z-index: 3;
     top: 0;
     width: 100vw;
     display: flex;
@@ -55,9 +56,10 @@ body{
 }
 
 #btn-boutique {
-    position: absolute;
+    position: fixed;
     top: 31px;
     right: 8vw;
+    z-index: 4;
 }
 
 #btn-boutique a{
@@ -106,10 +108,10 @@ body{
         display: block;
         width: 40px;
         height: 40px;
-        position: absolute;
+        position: fixed;
         top: 20px;
         left: 20px;
-        z-index: 3;
+        z-index: 4;
         background: url(../img/icon_burger.svg);
     }
 
@@ -160,7 +162,7 @@ body{
     }
     
     #btn-boutique{
-        top: 228px;
+        top: 30px;
         right: 5vw;
     }
     
@@ -168,12 +170,11 @@ body{
 
 @media (max-width: 576px){
     #nav-bar{
-        height: 367px;
+        height: 315px;
     }
 
     #btn-boutique{
-        top: 300px;
-        left: 90px;
+        z-index: 2;
     }
 }
 
@@ -182,9 +183,9 @@ body{
         height: 388px;
     }
 
-    #btn-boutique{
+    /* #btn-boutique{
         top: 330px;
-    }
+    } */
 }
 
 @media (max-width: 287px){
@@ -192,9 +193,9 @@ body{
         height: 428px;
     }
 
-    #btn-boutique{
+    /* #btn-boutique{
         top: 369px;
-    }
+    } */
 }
 
 /* contenu header */
@@ -204,7 +205,7 @@ header{
 
 #bg-header{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     bottom: 10vh;
     z-index: -1;
 }
@@ -214,14 +215,14 @@ header{
     top: -26px;
     left: 8rem;
     width: 150px;
-    z-index: 3;
+    z-index: 2;
 }
     
 header h1{
     margin: 13rem 0 0 8rem ;
     color: var(--orange);
     font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 75px;
+    font-size: 100px;
 } 
 
 header p{
@@ -234,7 +235,7 @@ header p{
 
 /* section 1 */
 section:first-child{
-    width: 100vw;
+    width: 100%;
 }
 
 #sect1h2{
