@@ -1,6 +1,7 @@
 :root{
     --gris: #434343;
     --orange: #F89B31;
+    --black: #181617;
 }
 
 @font-face {
@@ -13,4 +14,347 @@
     src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
+body{
+    font-family: 'Rale', Tahoma, Geneva, Verdana, sans-serif
+}
 
+/* header */
+
+/* navbar */
+
+#btn-burger{
+    display: none;
+}
+
+#nav-bar{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#menu{
+    display: flex;
+}
+
+#menu li{
+    list-style: none;
+    margin: 1rem 3vw;
+}
+
+#menu li a{
+    text-decoration: none;
+    font-family: 'Rale', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--black);
+}
+
+#menu li a:hover{
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+#btn-boutique {
+    position: fixed;
+    top: 31px;
+    right: 8vw;
+    z-index: 4;
+}
+
+#btn-boutique a{
+    padding: 14px 24px;
+    color: white;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-decoration: none;
+    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+#btn-boutique a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#btn-boutique a:hover{
+    color: var(--orange);
+    background-color: white;
+    
+}
+
+@media (max-width: 992px){
+    #btn-boutique{
+        right: 3vw;
+    }
+
+    #btn-boutique a{
+        padding: 7px 12px;
+    }
+}
+
+@media (max-width: 768px){
+    
+    #btn-burger{
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 4;
+        background: url(../img/icon_burger.svg);
+    }
+
+    #btn-burger.is-closed{
+        background: url(../img/icon_burger.svg);
+    }
+
+    #btn-burger.is-opened{
+        background: url(../img/icon_croix.svg);
+    }
+
+    #menu{
+        margin-left: 50px;
+    }
+
+    #menu li{
+        margin: 50px 0;
+    }
+
+    #menu li a{
+        font-size: 2rem;
+    }
+
+    #nav-bar{
+        display: block;
+        transition: transform 0.8s ease-in-out;
+        transform: translateY(-120%);
+        -webkit-transform: translateY(-120%);
+        -moz-transform: translateY(-120%);
+        -ms-transform: translateY(-120%);
+        -o-transform: translateY(-120%);
+        -webkit-transition: transform 0.8s ease-in-out;
+        -moz-transition: transform 0.8s ease-in-out;
+        -ms-transition: transform 0.8s ease-in-out;
+        -o-transition: transform 0.8s ease-in-out;
+    }
+
+    #nav-bar.isOpen{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    
+    #menu{
+        display: block;
+    }
+    
+    #btn-boutique{
+        top: 30px;
+        right: 5vw;
+    }
+    
+}
+
+@media (max-width: 576px){
+    #nav-bar{
+        height: 315px;
+    }
+
+    #btn-boutique{
+        z-index: 2;
+    }
+}
+
+@media (max-width: 338px){
+    #nav-bar{
+        height: 388px;
+    }
+}
+
+@media (max-width: 287px){
+    #nav-bar{
+        height: 428px;
+    }
+}
+
+/* contenu header */
+.bg-header{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/illustration_home_onlinebio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-h-recettes{
+    background-image: url(../img/illustration_recette.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#img-header{
+    position: absolute;
+    top: -26px;
+    left: 8rem;
+    width: 150px;
+    z-index: 2;
+}
+
+#cont-header{
+    width: 801px;
+    position: relative;
+    top: 22vh;
+    left: 8rem;
+    margin: 0;
+}
+    
+header h1{
+    color: var(--orange);
+    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    margin: 0;
+} 
+
+header p{
+    color: var(--gris);
+    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+@media (max-width: 992px){
+
+
+    #img-header{
+        left: 4rem;
+    }
+
+    #cont-header{
+        width: 641px;
+        left: 8rem;
+    }
+
+    header h1{
+        font-size: 80px;
+    } 
+    
+    header p{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px){
+
+    #img-header{
+        position: relative;
+        left: 0;
+    }
+
+    #div-img-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #cont-header{
+        width: 550px;
+        left: 4rem;
+    }
+
+    header h1{
+        font-size: 70px;
+    } 
+    
+    header p{
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 576px){
+    #img-header{
+        width: 100px;
+        left: -40px;
+    }
+
+    #cont-header{
+        width: 317px;
+        left: 4rem;
+    }
+
+    header h1{
+        font-size: 50px;
+    } 
+    
+    header p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .bg-header{
+        height: 60vh;
+    }
+
+    #cont-header{
+        width: 254px;
+        top: 15vw;
+        left: 2rem;
+    }
+
+    header h1{
+
+        font-size: 40px;
+    } 
+    
+    header p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 338px){
+    #img-header{
+        top: -6px;
+        width: 70px;
+    }
+
+    #cont-header{
+        width: 235px;
+        left: 2rem;
+    }
+
+    header h1{
+
+        font-size: 30px;
+    } 
+    
+    header p{
+        font-size: 9px;
+    }
+}
+
+
+/* section 1 */
+section:first-child{
+    width: 100%;
+}
+
+#sect1h2{
+    width: 100%;
+    text-align: center;
+}
