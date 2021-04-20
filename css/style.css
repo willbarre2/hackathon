@@ -1,0 +1,124 @@
+:root{
+    --gris: #434343;
+    --orange: #F89B31;
+}
+
+@font-face {
+    font-family: "Rale";
+    src: url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RaleB";
+    src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
+}
+
+
+/* *********** Footer  *********** */
+footer li {
+    list-style: none;
+}
+footer {
+    color: white;
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+footer .contact,.livraison {
+    display: block;
+    color: white;
+}
+
+footer a:visited{
+    text-decoration: none;
+}
+
+footer .contact li{
+    padding-top: 10px;
+}
+
+footer .livraison li:nth-child(2) {
+    margin-top: 30px;
+}
+
+footer ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer img {
+    height: 150px;
+    width: auto;
+}
+
+footer i {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+#btn-boutique-footer {
+    top: 31px;
+    right: 8vw;
+}
+
+#btn-boutique-footer a{
+    padding: 14px 24px;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-decoration: none;
+    font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+#btn-boutique-footer a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#btn-boutique-footer a:hover{
+    color: var(--orange);
+    background-color: white;
+}
+
+footer #icon {
+    display: block;
+    margin-top: 60px;
+}
+
+footer .fontawesome {
+    color: white;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width : 869px) {
+    footer ul {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+    .fontawesome {
+        padding-left: 0;
+    }
+}
