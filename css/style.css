@@ -182,20 +182,12 @@ body{
     #nav-bar{
         height: 388px;
     }
-
-    /* #btn-boutique{
-        top: 330px;
-    } */
 }
 
 @media (max-width: 287px){
     #nav-bar{
         height: 428px;
     }
-
-    /* #btn-boutique{
-        top: 369px;
-    } */
 }
 
 /* contenu header */
@@ -229,9 +221,92 @@ header p{
     margin: 13px 0 0 8rem ;
     color: var(--gris);
     font-family: 'RaleB', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 22px;
+    font-size: 30px;
 }
 
+
+
+
+@media (max-width: 992px){
+    #img-header{
+        left: 4rem;
+    }
+
+    header h1{
+        margin: 13rem 0 0 4rem ;
+        font-size: 80px;
+    } 
+    
+    header p{
+        margin: 13px 0 0 4rem ;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px){
+    #img-header{
+        position: relative;
+        left: 0;
+    }
+
+    #div-img-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+
+    header h1{
+        margin: 17rem 0 0 4rem ;
+        font-size: 70px;
+    } 
+    
+    header p{
+        margin: 13px 0 0 4rem ;
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 576px){
+    #img-header{
+        width: 100px;
+        left: -40px;
+    }
+
+    header h1{
+        margin: 17rem 0 0 4rem ;
+        font-size: 50px;
+    } 
+    
+    header p{
+        margin: 13px 0 0 4rem ;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    header h1{
+        margin: 17rem 0 0 2rem ;
+        font-size: 40px;
+    } 
+    
+    header p{
+        margin: 13px 0 0 2rem ;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 338px){
+    #img-header{
+        top: -6px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 287px){
+    
+}
 
 /* section 1 */
 section:first-child{
@@ -241,4 +316,3 @@ section:first-child{
 #sect1h2{
     margin: 1rem auto;
 }
-
