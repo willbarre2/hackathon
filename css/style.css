@@ -206,6 +206,12 @@ body{
     background-position: center;
 }
 
+.bg-h-prods{
+    background-image: url(../img/illustration-producteurs.svg);
+    background-size: cover;
+    background-position: center;
+}
+
 #img-header{
     position: absolute;
     top: -26px;
@@ -372,6 +378,12 @@ section:first-child{
     display: flex;
     margin: 0 8rem 3rem 8rem;
     justify-content: space-between;
+}
+
+@media (max-width: 1200px){
+    .cont-cards-prod{
+        display: none;
+    }
 }
 
 .cards-prod{

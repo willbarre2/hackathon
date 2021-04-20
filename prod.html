@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producteurs/Online-Bio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/normalizer.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prod-swipper.css">
+    
 
 </head>
 
 <body>
 
     <header>
-        <div class="bg-header">
+        <div class="bg-header bg-h-prods">
             <!-- navbarre -->
             <div id="btn-burger"></div>
             <div id="nav-bar">
@@ -89,10 +93,80 @@
                 </a>
             </div>
         </div>
+
+        <!-- Slider main container -->
+        <div class="slider-container">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="cards-prod-swiper">
+                            <a href="./fermeTyCoz.html ">
+                                <img src="./img/portrait_prod_ty_cos.jpg" alt="portrait d'un producteur">
+                                <h2>Ferme ty coz</h2>
+                                <p>Une grande histoire de famille de producteurs bretons.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cards-prod-swiper">
+                            <a href="#">
+                                <img src="./img/portrait_prod_1.jpg" alt="portrait d'un producteur" class="grayscale">
+                                <h2>Producteur à venir</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cards-prod-swiper">
+                            <a href="#">
+                                <img src="./img/portrait_prod_2.jpg" alt="portrait d'un producteur" class="grayscale">
+                                <h2>Producteur à venir</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cards-prod-swiper">
+                            <a href="#">
+                                <img src="./img/portrait_prod_3.jpg" alt="portrait d'un producteur" class="grayscale">
+                                <h2>Producteur à venir</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cards-prod-swiper">
+                            <a href="#">
+                                <img src="./img/portrait_prod_2.jpg" alt="portrait d'un producteur" class="grayscale">
+                                <h2>Producteur à venir</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cards-prod-swiper">
+                            <a href="#">
+                                <img src="./img/portrait_prod_1.jpg" alt="portrait d'un producteur" class="grayscale">
+                                <h2>Producteur à venir</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+
     </main>
 
     <script src="./libs/jquery_min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/prod.js"></script>
 </body>
 
 </html>
