@@ -1,13 +1,13 @@
 const navBar = document.getElementById("nav-bar");
 
-if (window.innerWidth < 768) {
+if (window.innerWidth <= 768) {
   navBar.style.backgroundColor = "white";
 } else if (window.innerWidth > 768) {
   navBar.style.backgroundColor = "transparent";
 }
 
 window.addEventListener("scroll", (event) => {
-  if (window.scrollY >= 100 || window.innerWidth < 768) {
+  if (window.scrollY >= 100 || window.innerWidth <= 768) {
     navBar.style.backgroundColor = "white";
   } else if (window.scrollY < 100 || window.innerWidth > 768) {
     navBar.style.backgroundColor = "transparent";
