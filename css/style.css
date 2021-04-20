@@ -134,7 +134,7 @@ footer a {
     color: white;
 }
 
-.t2 {
+footer .t2 {
     display: none;
 }
 
@@ -158,62 +158,10 @@ footer a {
         display: inline-flex;
         padding: 0;
     }
-    .t1 {
+    footer .t1 {
         display: none;
     }
-    .t2 {
+    footer .t2 {
         display: block;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width : 918px) {
-    footer ul {
-        display: block;
-        text-align: center;
-        padding: 0;
-        padding-bottom: 20px;
-    }
-    footer .contact,.livraison,.map{
-        padding-left: 0;
-    }
-    footer .livraison {
-        padding: 0;
-        margin: 0;
-        width: auto;
-    }
-    footer li{
-        padding-bottom: 10px;
-    }
-    footer #icon ul{
-        display: inline-flex;
-        padding: 0;
-    }
-    footer #icon li {
-        padding: 0 10px 0 10px;
-    }
-    footer #icon img {
-        padding:0 0 10px 0;
-    }
-    footer p {
-        padding: 0;
-        text-align: center;
-    }
-} */
