@@ -23,51 +23,53 @@ footer {
     background-color: black;
     height: auto;
     width: 100%;
+    padding-bottom: 10px;
 }
-
 footer .contact,.livraison {
     display: block;
     color: white;
 }
-
 footer a:visited{
     text-decoration: none;
 }
-
 footer .contact li{
     padding-top: 10px;
 }
-
 footer .livraison li:nth-child(2) {
     margin-top: 30px;
 }
-
 footer ul {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
-
 footer p {
     font-size: 15px;
 }
-
 footer img {
-    height: 150px;
+    height: 140px;
     width: auto;
 }
-
-footer i {
-    font-size: 2rem;
-    margin-left: 20px;
+footer #icon img{
+    height: 25px;
+    padding-right: 15px;
 }
-
+footer #icon ul {
+    justify-content: flex-start;
+    padding: 45px 0px 0 0;
+}
+footer #icon {
+    display: block;
+    margin-top: 60px;
+}
+.map img {
+    height: 120px;
+}
 #btn-boutique-footer {
     top: 31px;
     right: 8vw;
 }
-
 #btn-boutique-footer a{
     padding: 14px 24px;
     background-color: var(--orange);
@@ -85,40 +87,35 @@ footer i {
     -ms-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
 }
-
 #btn-boutique-footer a:visited{
     text-decoration: none;
     color: white;
 }
-
 #btn-boutique-footer a:hover{
     color: var(--orange);
     background-color: white;
 }
-
-footer #icon {
-    display: block;
-    margin-top: 60px;
-}
-
-footer .fontawesome {
-    color: white;
-    padding-top: 50px;
-    padding-left: 10px;
-}
-
 footer a {
     color: white;
 }
-
-@media screen and (max-width : 869px) {
+@media screen and (max-width : 909px) {
     footer ul {
         display: block;
         text-align: center;
         padding-left: 0;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
-    .fontawesome {
+    footer .contact,.livraison,.map{
         padding-left: 0;
+    }
+    footer #icon ul{
+        display: inline-flex;
+        padding-left: 0;
+    }
+    footer #icon li {
+        padding: 0 10px 0 10px;
+    }
+    footer #icon img {
+        padding:0 0 10px 0;
     }
 }
