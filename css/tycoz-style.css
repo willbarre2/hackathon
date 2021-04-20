@@ -1,0 +1,132 @@
+:root {
+  --gris: #434343;
+  --gris-clair: #707070;
+  --orange: #f89b31;
+}
+
+@font-face {
+  font-family: "Rale";
+  src: url(../fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "RaleB";
+  src: url(../fonts/Raleway/static/Raleway-Bold.ttf);
+}
+
+body {
+  font-family: Rale;
+}
+
+/* Style général pour les sections */
+.section-container {
+  width: 80%;
+  margin: 0 auto;
+}
+section:nth-child(2n + 1) {
+  font-size: 0.9rem;
+  color: var(--gris-clair);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+}
+
+section:nth-child(2n) {
+  font-size: 0.9rem;
+  background-color: var(--orange);
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.section-container img {
+  width: 100%;
+}
+
+.section-box-img {
+  /* width: 236px;
+    height: 236px; */
+  width: 80%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Premiere section */
+/* ==================== */
+.section1-container {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.section1-heading {
+  font-family: RaleB;
+  text-align: center;
+}
+
+.section1-heading h1 {
+  font-size: 2rem;
+  color: var(--orange);
+}
+.section1-heading h2 {
+  font-size: 1rem;
+  color: var(--gris-clair);
+  margin-bottom: 2rem;
+}
+
+.section1-content p {
+  color: var(--gris-clair);
+  font-size: 0.9rem;
+}
+
+/* Section 2 - Présentation Estelle et Anne */
+
+.section2-content {
+  /* line-height: 1.2; */
+}
+
+/* Section 3 Mode de production */
+.section3 {
+  color: var(--gris-clair);
+}
+
+.section3 ul {
+  padding-left: 1.5rem;
+}
+
+.section3 li {
+  list-style-type: "- ";
+  margin-bottom: 5px;
+}
+
+/* Section 5 - Ruche */
+.section5-content,
+.section6-content {
+  margin-bottom: 2rem;
+}
+
+.section7 .section-box-img {
+  margin-top: 2rem;
+}
+
+/* Dernière section - Nos produits */
+.section8-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section8-header .order-btn {
+  font-family: RaleB;
+  color: var(--orange);
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 0.7em 1.5em;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.section8-header .order-btn:hover {
+  color: #fff;
+  background-color: var(--orange);
+}
