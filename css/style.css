@@ -369,6 +369,19 @@ header p {
 
 
 /* section 1 */
+
+#bgtest{
+    /* background-image: url(../img/chemin.jpg);
+    background-size: cover; */
+    width: 100%;
+    height: 500vh;
+}
+
+#bgtestimg{
+    width: 100%;
+    height: 100%; 
+}
+
 section:first-child {
     width: 100%;
 }
@@ -962,3 +975,28 @@ footer .t2 {
      
     }
 }
+
+#circle{
+    transform: rotate(-90deg);
+    offset-path: path('M1139.4,0c0,368.6-404.4,348.1-416.7,850.6s441.2,465.7,428.9,980.4s-478,486.1-441.2,1184.7c36.8,698.6,618,1023.8,482.9,1654.5c-134.8,629.1-534.1,973.9-478,1470.6c59,522.8,420.2,870.1,416.7,1419.2');
+    offset-distance: var(--offset);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+/* transform-origin: center;
+    transform: rotate(-45deg); */
+    
+    /* position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f37208; */
+.st0{fill:#B5E245;}
+.st1{fill:#C6E873;}
+.st2{fill:#E4936B;}
+.st3{fill:#E27D47;}
