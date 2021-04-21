@@ -18,12 +18,33 @@ body {
   font-family: Rale;
 }
 
+/* Correction conflits */
+@media screen and (max-width: 918px) {
+  li,
+  p {
+    display: block;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 0;
+  }
+  footer ul li,
+  footer p {
+    text-align: center;
+  }
+}
+
+#btn-boutique {
+  z-index: 25;
+}
+#nav-bar {
+  z-index: 20;
+}
 /* Style général pour les sections */
 /* ====================================== */
 .section-container {
   width: 80%;
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 41rem;
 }
 section:nth-child(2n + 1) {
   font-size: 0.9rem;
@@ -48,8 +69,8 @@ section:nth-child(2n) {
 
 .section-box-img {
   width: 80%;
-  max-width: 420px;
-  min-width: 320px;
+  max-width: 26rem;
+  min-width: 16rem;
   margin: 0 auto;
 }
 
@@ -96,6 +117,7 @@ section:nth-child(2n) {
 }
 
 .section3 li {
+  display: list-item;
   list-style-type: "- ";
   margin-bottom: 5px;
 }
@@ -122,7 +144,7 @@ section:nth-child(2n).section8 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 500px;
+  max-width: 31rem;
 }
 
 .section8-header .order-btn {
@@ -146,9 +168,9 @@ section:nth-child(2n).section8 {
 .swiper-container {
   margin-top: 2rem;
   width: 90%;
-  min-height: 200px;
+  min-height: 13rem;
   height: 40vh;
-  max-width: 500px;
+  max-width: 31rem;
   cursor: pointer;
 }
 
@@ -231,19 +253,21 @@ section:nth-child(2n).section8 {
   /* ============================== */
   .section-box-img {
     width: 30%;
+
     max-width: 600px;
     margin: 0 auto;
   }
+
   .section-content {
     width: 70%;
-    max-width: 800px;
+    max-width: 50rem;
   }
 
   .section-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1500px;
+    max-width: 92rem;
   }
 
   section:nth-child(2n + 1) {
@@ -279,7 +303,6 @@ section:nth-child(2n).section8 {
   }
   .section1-heading h1 {
     font-size: clamp(2.5rem, 5vw, 5rem);
-    /* font-size: 100px; */
     margin: 0;
   }
   .section1-heading h2 {
@@ -295,17 +318,18 @@ section:nth-child(2n).section8 {
   /* ====================== */
   .section2 .section-box-img {
     order: 2;
-    margin-left: 2rem;
+    margin-left: 6rem;
   }
 
   /* Section 3 - Modes de production*/
   /* ====================== */
   .section3 {
     display: block;
+    max-width: 56rem;
   }
   .section3-content {
     width: 100%;
-    max-width: 1300px;
+    max-width: 81rem;
   }
 
   /* Section 4 Notre sol */
@@ -341,7 +365,7 @@ section:nth-child(2n).section8 {
   /* Section8 Slider et grid */
   /* ====================== */
   .section8-header {
-    max-width: 1000px;
+    max-width: 63rem;
   }
   .slider-container {
     display: none;
@@ -350,14 +374,14 @@ section:nth-child(2n).section8 {
   .grid-box {
     position: relative;
     width: 90%;
-    max-width: 1000px;
+    max-width: 63rem;
     margin: auto;
   }
 
   .grid-container {
     display: block;
     width: 90%;
-    height: 700px;
+    height: 44rem;
     margin: 2rem auto 0;
     padding: 0.5rem;
     background-color: #fff;
@@ -365,15 +389,15 @@ section:nth-child(2n).section8 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-template-rows: repeat (12, 1fr);
-    max-width: 1000px;
+    max-width: 63rem;
     cursor: pointer;
   }
 
   .floating-grid-item {
-    height: 240px;
+    height: 15rem;
     border-radius: 50%;
     border: 10px solid #fff;
-    width: 240px;
+    width: 15rem;
     position: absolute;
     left: 20%;
     top: 15%;
@@ -469,4 +493,15 @@ section:nth-child(2n).section8 {
   .grid-item:nth-child(9) {
     grid-row: 7/12;
   }
+}
+
+/* Correction effondrement section1 et nav */
+@media (min-width: 768px) and (max-width: 928px) {
+  .section1 {
+    margin-top: 6rem;
+  }
+}
+
+footer ul {
+  margin-top: 0;
 }
