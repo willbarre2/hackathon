@@ -490,6 +490,10 @@ section:first-child {
     margin: 40px;
 }
 
+.section-cards .cards div a{
+    text-decoration: none;
+}
+
 .section-cards .cards img {
     height: 200px;
     width: 200px;
