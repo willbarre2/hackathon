@@ -3,7 +3,6 @@ const swiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   spaceBetween: 100,
   speed: 400,
-  initialSlide: 0,
   keyboard: {
     enabled: true,
   },

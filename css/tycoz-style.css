@@ -19,6 +19,7 @@ body {
 }
 
 /* Style général pour les sections */
+/* ====================================== */
 .section-container {
   width: 80%;
   margin: 0 auto;
@@ -46,14 +47,17 @@ section:nth-child(2n) {
 }
 
 .section-box-img {
-  /* width: 236px;
-    height: 236px; */
   width: 80%;
   max-width: 420px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
-/* Premiere section */
+.box-img-desktop {
+  display: none;
+}
+
+/* Premiere section  */
 /* ==================== */
 .section1-container {
   margin-top: 5rem;
@@ -80,13 +84,9 @@ section:nth-child(2n) {
   font-size: 0.9rem;
 }
 
-/* Section 2 - Présentation Estelle et Anne */
-
-.section2-content {
-  /* line-height: 1.2; */
-}
-
 /* Section 3 Mode de production */
+/* ==================================== */
+
 .section3 {
   color: var(--gris-clair);
 }
@@ -101,6 +101,8 @@ section:nth-child(2n) {
 }
 
 /* Section 5 - Ruche */
+/* ==================================== */
+
 .section5-content,
 .section6-content {
   margin-bottom: 2rem;
@@ -110,7 +112,8 @@ section:nth-child(2n) {
   margin-top: 2rem;
 }
 
-/* Dernière section - Nos produits */
+/* Section 8 -  Slider et gallerie */
+/* ==================================== */
 
 section:nth-child(2n).section8 {
   padding-bottom: 4rem;
@@ -139,12 +142,14 @@ section:nth-child(2n).section8 {
 }
 
 /* Slider */
+/* ========================== */
 .swiper-container {
   margin-top: 2rem;
   width: 90%;
   min-height: 200px;
   height: 50vh;
   max-width: 500px;
+  cursor: pointer;
 }
 
 .swiper-slide {
@@ -161,45 +166,39 @@ section:nth-child(2n).section8 {
   background-image: url("../img/ty-coz/slider/ail.jpg");
 }
 .swiper-slide:nth-child(2) {
-  background-image: url("../img/ty-coz/slider/tomates.jpg");
+  background-image: url("../img/ty-coz/slider/orange-jus.jpg");
 }
 
 .swiper-slide:nth-child(3) {
-  background-image: url("../img/ty-coz/slider/courgettes-jaunes.jpg");
+  background-image: url("../img/ty-coz/slider/patate-douce.jpg");
 }
 .swiper-slide:nth-child(4) {
-  background-image: url("../img/ty-coz/slider/navets-bottes.jpg");
+  background-image: url("../img/ty-coz/slider/betterave-crue.jpg");
 }
 
 .swiper-slide:nth-child(5) {
-  background-image: url("../img/ty-coz/slider/courgettes-rondes.jpg");
+  background-image: url("../img/ty-coz/slider/patate-douce.jpg");
 }
 .swiper-slide:nth-child(6) {
-  background-image: url("../img/ty-coz/slider/patate-douce.jpg");
+  background-image: url("../img/ty-coz/slider/pourpier.jpg");
 }
 .swiper-slide:nth-child(7) {
   background-image: url("../img/ty-coz/slider/panais.jpg");
 }
 
 .swiper-slide:nth-child(8) {
-  background-image: url("../img/ty-coz/slider/rhubarbe.jpg");
+  background-image: url("../img/ty-coz/slider/avocats.jpg");
 }
 .swiper-slide:nth-child(9) {
-  background-image: url("../img/ty-coz/slider/potiron.jpg");
+  background-image: url("../img/ty-coz/slider/kiwi.jpg");
 }
 
 .swiper-slide:nth-child(10) {
-  background-image: url("../img/ty-coz/slider/pourpier.jpg");
-}
-
-[class^="swiper-button"],
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  opacity: 0;
+  background-image: url("../img/ty-coz/slider/fraises-guariguette.jpg");
 }
 
 .swiper-pagination {
-  margin-top: 10px;
+  margin-top: 1rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -221,14 +220,141 @@ section:nth-child(2n).section8 {
 .grid-container {
   display: none;
 }
-@media (min-width: 56rem) {
+
+/* ========================================= */
+/* =============Desktop version =============*/
+/* ========================================= */
+
+@media (min-width: 58rem) {
+  /* General styling */
+  /* ============================== */
+  .section-box-img {
+    width: 30%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .section-content {
+    width: 70%;
+    max-width: 800px;
+  }
+
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+  }
+
+  section:nth-child(2n + 1) {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  section:nth-child(2n) {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding: 2rem 0;
+  }
+
+  /* Section1 */
+  /* ====================== */
+  .box-img-desktop {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .box-img-mobile {
+    display: none;
+  }
+  .section1-content-desktop {
+    margin-left: 5%;
+    width: 70%;
+  }
+
+  .section1-heading {
+    text-align: left;
+  }
+  .section1-heading h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    /* font-size: 100px; */
+    margin: 0;
+  }
+  .section1-heading h2 {
+    font-size: clamp(1rem, 3vw, 2.3rem);
+    margin: 1rem 0 2rem;
+  }
+
+  .section1-content-desktop p {
+    font-size: 1.3rem;
+  }
+
+  /* Section 2 - Présentation Estelle et Anne */
+  /* ====================== */
+  .section2 .section-box-img {
+    order: 2;
+    margin-left: 2rem;
+  }
+
+  /* Section 3 - Modes de production*/
+  /* ====================== */
+  .section3 {
+    display: block;
+  }
+  .section3-content {
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  /* Section 4 Notre sol */
+  /* ====================== */
+  .section4-content {
+    line-height: 2;
+    margin-left: 2rem;
+  }
+
+  /* Section 5 Lutte Intégrée - Ruche*/
+  /* ====================== */
+  .section5-content {
+    margin-right: 2rem;
+  }
+
+  /* Section 6 les Variétés*/
+  /* ====================== */
+  .section6-content {
+    margin-right: 4rem;
+    margin-left: 2rem;
+  }
+  .section6 .section-box-img {
+    order: -1;
+  }
+
+  /* Section 7 les Machines- Tracteur*/
+  /* ====================== */
+
+  .section7-content {
+    margin-right: 2rem;
+  }
+
+  /* Section8 Slider et grid */
+  /* ====================== */
+  .section8-header {
+    max-width: 1000px;
+  }
   .slider-container {
     display: none;
   }
+
+  .grid-box {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+  }
+
   .grid-container {
     display: block;
     width: 90%;
-    height: 800px;
+    height: 700px;
     margin: 2rem auto 0;
     padding: 0.5rem;
     background-color: #fff;
@@ -236,8 +362,22 @@ section:nth-child(2n).section8 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-template-rows: repeat (12, 1fr);
-    max-width: 900px;
-    /* overflow: hidden; */
+    max-width: 1000px;
+    cursor: pointer;
+  }
+
+  .floating-grid-item {
+    background: url("../img/ty-coz/slider/tomates.jpg");
+    background-size: cover;
+    height: 240px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    width: 240px;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    z-index: 10;
+    cursor: pointer;
   }
 
   .grid-item {
@@ -250,16 +390,16 @@ section:nth-child(2n).section8 {
     grid-row: 1/4;
   }
   .grid-item:nth-child(4) {
-    background-image: url("../img/ty-coz/slider/potiron.jpg");
+    background-image: url("../img/ty-coz/slider/betterave-crue.jpg");
     grid-row: 4/8;
   }
   .grid-item:nth-child(7) {
-    background-image: url("../img/ty-coz/slider/navets-bottes.jpg");
+    background-image: url("../img/ty-coz/slider/avocats.jpg");
     grid-row: 8/12;
   }
   /* Second column */
   .grid-item:nth-child(2) {
-    background-image: url("../img/ty-coz/slider/rhubarbe.jpg");
+    background-image: url("../img/ty-coz/slider/orange-jus.jpg");
     grid-row: 1/5;
   }
   .grid-item:nth-child(5) {
@@ -267,7 +407,7 @@ section:nth-child(2n).section8 {
     grid-row: 5/9;
   }
   .grid-item:nth-child(8) {
-    background-image: url("../img/ty-coz/slider/courgettes-rondes.jpg");
+    background-image: url("../img/ty-coz/slider/kiwi.jpg");
     grid-row: 9/12;
   }
   /* Third column */
@@ -280,7 +420,7 @@ section:nth-child(2n).section8 {
     grid-row: 4/7;
   }
   .grid-item:nth-child(9) {
-    background-image: url("../img/ty-coz/slider/courgettes-jaunes.jpg");
+    background-image: url("../img/ty-coz/slider/fraises-guariguette.jpg");
     grid-row: 7/12;
   }
 } ;
