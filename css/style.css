@@ -348,16 +348,565 @@ header p {
     }
 }
 
+/* ******** Home-Sect1 ********** */
 
-/* section 1 */
-section:first-child {
-    width: 100%;
+#home-sect1 h2 {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 3.5rem;
 }
-
-#sect1h2 {
-    width: 100%;
+#home-sect1 h3 {
+    font-size: 2rem;
+    color: var(--orange);
     text-align: center;
 }
+.grid-picto h4 {
+    font-size: 1.8rem;
+    color: var(--orange);
+    padding: 0;
+    margin: 0;
+}
+.grid-picto p {
+    text-align: start;
+    font-size: 1.2rem;
+    color:black;
+    padding: 0;
+    margin: 0;
+}
+#agribio p{
+    text-align: center;
+    margin-left: 15%;
+}
+#home-sect1 .picto-agri {
+    display: flex;
+}
+#home-sect1 .grid-picto{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 150px;
+    margin: 0 23% 3% 20%;
+}
+.picto-bio1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.picto-bio2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.picto-bio3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.picto-bio4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+.leg-bio1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.leg-bio2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.leg-bio3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.leg-bio4 {
+    grid-column: 2;
+    grid-row: 4;
+}
+#agribio{
+    grid-column: 4;
+    grid-row: 2;
+}
+#home-sect1 .tete {
+    border: 1px solid var(--orange);
+    width: 76%;
+    height: 20vh;
+    border-radius: 24px;
+    margin: 3% 12% 20px 12%;
+    display: flex;
+    align-items: center;
+}
+#home-sect1 .tete img {
+    padding-left: 5%;
+}
+#home-sect1 .tete p {
+    color: var(--gris);
+    font-size: 2rem;
+}
+#home-sect1 {
+    background-color: #69f197;
+    width: 100%;
+    height: auto;
+}
+#home-sect1 img {
+    width: 120px;
+    padding-right:10px ;
+}
+#agribio img {
+    width: 750px;
+}
+
+@media screen and (max-width : 1440px) {
+   #home-sect1 h2 {
+        font-size: 3em;
+    }
+    #home-sect1 .grid-picto{
+        margin: 0 6% 0 12%;
+    }
+}
+@media screen and (max-width : 1200px) {
+    #home-sect1 h2 {
+         font-size: 2.7em;
+         padding: 0 5%;
+     }
+     #home-sect1 .grid-picto{
+         margin: 0 10% 0 12%;
+     }
+     #agribio img {
+         width: 700px;
+     }
+ }
+ @media screen and (max-width : 1200px) {
+    #home-sect1 h2 {
+         font-size: 2.7em;
+         padding: 3% 5% 0 5%;
+     }
+     #home-sect1 .grid-picto{
+         margin: 0 10% 0 12%;
+     }
+     #agribio img {
+         width: 600px;
+     }
+     #home-sect1 .tete p{
+        font-size: 1.8rem;
+    }
+ }
+ @media screen and (max-width : 1024px) {
+     #home-sect1 .grid-picto{
+         margin: 0 10% 0 9%;
+     }
+     #agribio img {
+         width: 500px;
+     }
+     #agribio p {
+         margin-right: 20%;
+     }
+     #home-sect1 .tete p{
+         font-size: 1.7rem;
+     }
+ }
+ @media screen and (max-width : 850px) {
+    #home-sect1 h2 {
+         font-size: 2.7em;
+         padding: 3% 5% 0 5%;
+     }
+     #home-sect1 .grid-picto{
+         margin: 0 5% 0 1%;
+     }
+     #agribio img {
+         padding-top: 5%;
+         width: 480px;
+     }
+     #home-sect1 .tete p{
+        font-size: 1.6rem;
+    }
+ }
+ @media screen and (max-width : 768px) {
+    #home-sect1 .grid-picto{
+        margin: 0 9% 0 14%;
+        grid-auto-rows: auto;
+    }
+    .picto-bio1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .picto-bio2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .picto-bio3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .picto-bio4 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .leg-bio1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .leg-bio2 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .leg-bio3 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .leg-bio4 {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    #agribio{
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+    #agribio p {
+        margin: 0 0 3% 10%;
+    }
+    #home-sect1 .tete p{
+        font-size: 1.5rem;
+    }
+    #home-sect1 .tete img{
+        width: 100px;
+        padding-left: 2%;
+    }
+ }
+ @media screen and (max-width : 650px) {
+    #home-sect1 .grid-picto{
+        margin: 0 3% 0 3%;
+        grid-auto-rows: auto;
+    } 
+    #home-sect1 h2 {
+        font-size: 2.3em;
+    }
+    #agribio img {
+        padding-left: 20%;
+         width: 400px;
+     }
+     #home-sect1 .tete {
+        height: 30vh;
+    }
+    #agribio p {
+        margin: 0 0 3% 34%;
+    }
+ }
+ @media screen and (max-width : 615px) {
+    #home-sect1 .grid-picto{
+        margin: 0 20% 0 20%;
+    } 
+    
+    .picto-bio1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .picto-bio2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .picto-bio3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .picto-bio4 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .leg-bio1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .leg-bio2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .leg-bio3 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .leg-bio4 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    #agribio{
+        grid-column: 1/3;
+        grid-row: 5;
+    }
+    #agribio p {
+        margin: 0 0 3% 20%;
+    }
+    #agribio img {
+        padding: 0;
+        width: 350px;
+     }
+ }
+ @media screen and (max-width : 500px) {
+    #home-sect1 .grid-picto{
+        margin: 0 10% 0 15%;
+    } 
+    #home-sect1 .tete {
+        height: 35vh;
+    }
+ }
+ @media screen and (max-width : 425px) {
+    #home-sect1 .grid-picto{
+        margin: 0 10% 0 10%;
+    } 
+    #home-sect1 .tete p{
+        font-size: 1.2rem;
+    }
+    #agribio img {
+        width: 250px;
+     }
+ }
+ @media screen and (max-width : 340px) {
+    #home-sect1 .tete p{
+        font-size: 1rem;
+    }
+    #agribio p {
+        margin: 0 0 3% 10%;
+    }
+ }
+
+ /* ******** Home-Sect2 ********** */
+
+#home-sect2 h2 {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 3.5rem;
+}
+#home-sect2 h3 {
+    font-size: 2rem;
+    color: var(--orange);
+    text-align: center;
+}
+.grid-picto2 h4 {
+    font-size: 1.4rem;
+    color: var(--orange);
+    padding: 0;
+    margin: 0;
+}
+.grid-picto2 p {
+    text-align: start;
+    font-size: 1.2rem;
+    color:black;
+    padding: 0;
+    margin: 0;
+}
+#agribio2 p{
+    text-align: center;
+    margin-left: 15%2
+}
+#home-sect2 .picto-agri1 {
+    display: flex;
+}
+#home-sect2 .grid-picto2{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 150px;
+    margin: 0 23% 3% 20%;
+}
+.picto-bio11 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.picto-bio21 {
+    grid-column: 3;
+    grid-row: 2;
+}
+.picto-bio31 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.leg-bio11 {
+    grid-column: 4;
+    grid-row: 1;
+}
+.leg-bio21 {
+    grid-column: 4;
+    grid-row: 2;
+}
+.leg-bio31 {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#agribio2{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#home-sect2 {
+    background-color: #a869f1;
+    width: 100%;
+    height: auto;
+}
+#home-sect2 img {
+    width: 120px;
+    padding-right:10px ;
+}
+#agribio2 img {
+    width: 750px;
+}
+
+@media screen and (max-width : 1440px) {
+   #home-sect2 h2 {
+        font-size: 3em;
+    }
+    #home-sect2 .grid-picto2{
+        margin: 0 6% 0 12%;
+    }
+}
+@media screen and (max-width : 1200px) {
+    #home-sect2 h2 {
+         font-size: 2.7em;
+         padding: 0 5%;
+     }
+     #home-sect2 .grid-picto2{
+         margin: 0 10% 0 9%;
+     }
+     #agribio2 img {
+         width: 600px;
+     }
+ }
+
+ @media screen and (max-width : 1024px) {
+     #home-sect2 .grid-picto2{
+         margin: 0 10% 0 6%;
+     }
+     #agribio2 img {
+         width: 500px;
+     }
+     #agribio2 p {
+         margin-right: 20%;
+     }
+
+ }
+ @media screen and (max-width : 850px) {
+    #home-sect2 h2 {
+         font-size: 2.7em;
+         padding: 3% 5% 0 5%;
+     }
+     #home-sect2 .grid-picto2{
+         margin: 0 5% 0 1%;
+     }
+     #agribio2 img {
+         padding-top: 5%;
+         width: 470px;
+     }
+ }
+ @media screen and (max-width : 768px) {
+    #home-sect2 .grid-picto2{
+        margin: 0 9% 0 14%;
+        grid-auto-rows: auto;
+    }
+    .picto-bio11 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .picto-bio21 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .picto-bio31 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .leg-bio11 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .leg-bio21 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .leg-bio31 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    #agribio2{
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+    #agribio2 p {
+        margin: 0 0 3% 10%;
+    }
+ }
+ @media screen and (max-width : 650px) {
+    #home-sect2 .grid-picto2{
+        margin: 0 3% 0 3%;
+        grid-auto-rows: auto;
+    } 
+    #home-sect2 h2 {
+        font-size: 2.3em;
+    }
+    #agribio2 img {
+        padding-left: 20%;
+         width: 400px;
+     }
+    #agribio2 p {
+        margin: 0 0 3% 34%;
+    }
+ }
+ @media screen and (max-width : 615px) {
+    #home-sect2 .grid-picto2{
+        margin: 0 20% 0 20%;
+    } 
+    
+    .picto-bio11 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .picto-bio21 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .picto-bio31 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .leg-bio11 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .leg-bio21 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .leg-bio31 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    #agribio2{
+        grid-column: 1/3;
+        grid-row: 5;
+    }
+    #agribio2 p {
+        margin: 0 0 3% 20%;
+    }
+    #agribio2 img {
+        padding: 0;
+        width: 350px;
+     }
+ }
+ @media screen and (max-width : 500px) {
+    #home-sect2 .grid-picto2{
+        margin: 0 10% 0 15%;
+    } 
+ }
+ @media screen and (max-width : 425px) {
+    #home-sect2 .grid-picto2{
+        margin: 0 10% 0 10%;
+    } 
+    #agribio2 img {
+        width: 250px;
+     }
+ }
+ @media screen and (max-width : 340px) {
+    #agribio2 p {
+        margin: 0 0 3% 10%;
+    }
+ }
 
 /* ************** Section cards ******** */
 
@@ -391,8 +940,7 @@ section:first-child {
     margin-top: 20px;
 }
 
-.section-cards .cards h5,
-p {
+.section-cards .cards h5, .card p {
     padding: 5px 40px;
     color: white;
 }
@@ -815,55 +1363,62 @@ footer .t2 {
     .rec-carp .btq h2 {
         font-size: 1.5rem;
     }
+
     .panier img {
         height: 130px;
         padding-left: 10%;
     }
 }
+
 @media screen and (max-width : 427px) {
     .rec-carp .ingre div {
         width: 90px;
     }
+
     .rec-carp .ingre {
         padding: 0;
-        margin:0 20px;
+        margin: 0 20px;
     }
 
     .rec-carp .btq h2 {
         font-size: 1.5rem;
     }
+
     .panier img {
         height: 100px;
         padding-left: 10%;
     }
 }
+
 @media screen and (max-width : 375px) {
     .rec-carp .ingre div {
         width: 80px;
     }
+
     .rec-carp .ingre {
         padding: 0;
-        margin:0 15px;
+        margin: 0 15px;
     }
 
     .rec-carp .btq h2 {
         font-size: 1.2rem;
     }
+
     .panier img {
         height: 80px;
         padding-left: 10%;
     }
+
     #btn-boutique-recette a {
         padding: 14px 15px
-     
     }
 }
 
 /* ************ Effet terre ********** */
 
 .clickTerre {
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     position: absolute;
     z-index: 1000;
@@ -877,81 +1432,14 @@ footer .t2 {
     0% {
         transform: scale(0);
     }
+
     50% {
         transform: scale(1);
         opacity: 1;
     }
+
     100% {
         transform: scale(1);
         opacity: 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

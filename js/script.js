@@ -39,8 +39,8 @@ window.addEventListener('click',(event) => {
 
   const motte = document.createElement('div');
   motte.className ='clickTerre'
-  motte.style.top = `${event.pageY - 13}px`;
-  motte.style.left = `${event.pageX - 13}px`;
+  motte.style.top = `${event.pageY - 15}px`;
+  motte.style.left = `${event.pageX - 15}px`;
   document.body.appendChild(motte);
 
   setTimeout(() => {
