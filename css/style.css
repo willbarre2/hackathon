@@ -370,18 +370,6 @@ header p {
 
 /* section 1 */
 
-#bgtest{
-    /* background-image: url(../img/chemin.jpg);
-    background-size: cover; */
-    width: 100%;
-    height: 500vh;
-}
-
-#bgtestimg{
-    width: 100%;
-    height: 100%; 
-}
-
 section:first-child {
     width: 100%;
 }
