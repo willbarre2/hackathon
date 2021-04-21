@@ -591,7 +591,7 @@ footer .t2 {
 }
 
 @media screen and (max-width : 918px) {
-    footer ul,li,p{
+    footer ul, footer li, footer p{
         display: block;
         text-align: center;
         padding: 0;
