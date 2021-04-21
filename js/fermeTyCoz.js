@@ -26,3 +26,25 @@ const swiper = new Swiper(".swiper-container", {
     el: ".swiper-scrollbar",
   },
 });
+
+// Reveal titles
+const all_sections = document.querySelectorAll(".section-reveal");
+
+const revealSectionImg = function (entries, observer) {
+  const [entry] = entries;
+  if (entry.isIntersecting) {
+    if (entry.target.classList.contains("section1"))
+      entry.target.querySelector(".box-img-mobile").classList.add("reveal");
+    entry.target.querySelector(".section-box-img").classList.add("reveal");
+    observer.unobserve(entry.target);
+  }
+};
+
+const sectionObserver = new IntersectionObserver(revealSectionImg, {
+  root: null,
+  threshold: 0.5,
+});
+
+all_sections.forEach(function (section) {
+  sectionObserver.observe(section);
+});
