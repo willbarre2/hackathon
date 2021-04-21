@@ -493,7 +493,7 @@ section:first-child{
     margin-top: 20px;
 }
 
-.section-cards .cards h5,p {
+.section-cards .cards h5, .section-cards .cards p {
     padding: 5px 40px;
     color: white;
 }
