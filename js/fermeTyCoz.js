@@ -6,10 +6,10 @@ const swiper = new Swiper(".swiper-container", {
   keyboard: {
     enabled: true,
   },
-  //   autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false,
-  //   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",

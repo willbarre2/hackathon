@@ -147,7 +147,7 @@ section:nth-child(2n).section8 {
   margin-top: 2rem;
   width: 90%;
   min-height: 200px;
-  height: 50vh;
+  height: 40vh;
   max-width: 500px;
   cursor: pointer;
 }
@@ -156,7 +156,8 @@ section:nth-child(2n).section8 {
   background-size: cover;
   background-position: center;
 }
-.swiper-slide a {
+.swiper-slide a,
+.grid-box a {
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -170,7 +171,7 @@ section:nth-child(2n).section8 {
 }
 
 .swiper-slide:nth-child(3) {
-  background-image: url("../img/ty-coz/slider/patate-douce.jpg");
+  background-image: url("../img/ty-coz/slider/tomates.jpg");
 }
 .swiper-slide:nth-child(4) {
   background-image: url("../img/ty-coz/slider/betterave-crue.jpg");
@@ -180,7 +181,7 @@ section:nth-child(2n).section8 {
   background-image: url("../img/ty-coz/slider/patate-douce.jpg");
 }
 .swiper-slide:nth-child(6) {
-  background-image: url("../img/ty-coz/slider/pourpier.jpg");
+  background-image: url("../img/ty-coz/slider/batavia.jpg");
 }
 .swiper-slide:nth-child(7) {
   background-image: url("../img/ty-coz/slider/panais.jpg");
@@ -204,7 +205,7 @@ section:nth-child(2n).section8 {
 }
 
 .swiper-pagination-bullet {
-  background-color: #4e8b07;
+  background-color: var(--gris);
   width: 12px;
   height: 12px;
   margin-left: 2px;
@@ -212,7 +213,7 @@ section:nth-child(2n).section8 {
 }
 
 .swiper-pagination-bullet-active {
-  opacity: 1;
+  opacity: 0.8;
   width: 14px;
   height: 14px;
 }
@@ -367,8 +368,6 @@ section:nth-child(2n).section8 {
   }
 
   .floating-grid-item {
-    background: url("../img/ty-coz/slider/tomates.jpg");
-    background-size: cover;
     height: 240px;
     border-radius: 50%;
     border: 10px solid #fff;
@@ -377,50 +376,95 @@ section:nth-child(2n).section8 {
     left: 20%;
     top: 15%;
     z-index: 10;
-    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .floating-grid-item > div {
+    height: 100%;
+    width: 100%;
+    background: url("../img/ty-coz/slider/tomates.jpg");
+    background-size: cover;
+    transition: all 0.3s;
   }
 
   .grid-item {
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .grid-item-child {
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-position: center;
+    transition: all 0.3s;
+  }
+
+  .grid-item-child:hover,
+  .floating-grid-item > div:hover {
+    transform: scale(1.1);
   }
   /* first column */
-  .grid-item:nth-child(1) {
+  .grid-item:nth-child(1) .grid-item-child {
     background-image: url("../img/ty-coz/slider/ail.jpg");
+  }
+  .grid-item:nth-child(4) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/betterave-crue.jpg");
+  }
+  .grid-item:nth-child(7) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/avocats.jpg");
+  }
+
+  /* Second column */
+  .grid-item:nth-child(2) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/orange-jus.jpg");
+  }
+  .grid-item:nth-child(5) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/panais.jpg");
+  }
+  .grid-item:nth-child(8) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/kiwi.jpg");
+  }
+
+  /* Third column */
+  .grid-item:nth-child(3) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/patate-douce.jpg");
+  }
+  .grid-item:nth-child(6) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/batavia.jpg");
+  }
+  .grid-item:nth-child(9) .grid-item-child {
+    background-image: url("../img/ty-coz/slider/fraises-guariguette.jpg");
+  }
+
+  /* first column */
+  .grid-item:nth-child(1) {
     grid-row: 1/4;
   }
   .grid-item:nth-child(4) {
-    background-image: url("../img/ty-coz/slider/betterave-crue.jpg");
     grid-row: 4/8;
   }
   .grid-item:nth-child(7) {
-    background-image: url("../img/ty-coz/slider/avocats.jpg");
     grid-row: 8/12;
   }
   /* Second column */
   .grid-item:nth-child(2) {
-    background-image: url("../img/ty-coz/slider/orange-jus.jpg");
     grid-row: 1/5;
   }
   .grid-item:nth-child(5) {
-    background-image: url("../img/ty-coz/slider/panais.jpg");
     grid-row: 5/9;
   }
   .grid-item:nth-child(8) {
-    background-image: url("../img/ty-coz/slider/kiwi.jpg");
     grid-row: 9/12;
   }
   /* Third column */
   .grid-item:nth-child(3) {
-    background-image: url("../img/ty-coz/slider/patate-douce.jpg");
     grid-row: 1/4;
   }
   .grid-item:nth-child(6) {
-    background-image: url("../img/ty-coz/slider/pourpier.jpg");
     grid-row: 4/7;
   }
   .grid-item:nth-child(9) {
-    background-image: url("../img/ty-coz/slider/fraises-guariguette.jpg");
     grid-row: 7/12;
   }
 } ;
