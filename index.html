@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home/Online-Bio</title>
     <link rel="stylesheet" href="./css/normalizer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a8a5f7edae.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+    <div class="newsletters-modal-container hidden">
+        <div class="newsletters-modal"><button class="close-modal">&times;</button>
+            <p>Merci pour votre inscription!</p>
+        </div>
+    </div>
     <header>
         <div class="bg-header">
             <!-- navbarre -->
@@ -40,9 +46,62 @@
     <main>
         <section id="home-sect1">
             <h2 id="sect1h2">Et si nous mangions mieux?</h2>
-            <div style="width: 100%; height: 200vh;"></div>
         </section>
+        <section id="recipe-slider">
+            <h3>Réalisez nos bonnes recettes</h3>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img carpaccio"></div>
+                        <p>Carpaccio de tomates</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img quiche"></div>
+                        <p>Quiche Saumon Brocolis</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img coming-soon">+</div>
+                        <p>Recettes à venir</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img coming-soon">+</div>
+                        <p>Recettes à venir</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img coming-soon">+</div>
+                        <p>Recettes à venir</p>
+                    </div>
 
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section id="label-section">
+            <div class="logo-AB logo-bio"><img src="img/LOGOTYPES/AGRICULTURE BIOLOGIQUE/logoab.png"
+                    alt="logo Agriculture Biologique"></div>
+            <div class="logo-demeter logo-bio"><img src="img/LOGOTYPES/DEMETER/logoDemeter.jpg" alt="logo demeter">
+            </div>
+        </section>
+        <section id="newsletters-section">
+            <div class="newsletters-container">
+                <div class="newsletters-img"><img src="img/PICTOGRAMMES/icones-newsletter.svg" alt=""></div>
+                <div class="newsletters-content">
+                    <p class="newsletters-message">Pour recevoir la newsletter de notre petite graine!</p>
+
+
+                    <form action="" method="POST"><input class="newsletters-email" type="email"
+                            placeholder="Mon adresse mail" required><button class="submit-btn"><i
+                                class="fas fa-chevron-right"></i></button></form>
+                    <p class="error-message hidden"><i class="fas fa-exclamation-circle"></i>Veuillez rentrer un
+                        email-valide
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -68,16 +127,16 @@
                 <li class="t1">Termes et conditions</li>
 
             </ul>
-                <li class="map"><img src="./img/ILLUSTRATIONS/illustration-footer.svg" alt="picto Paris">
-                </li>
-                <li class="t2">Termes et conditions</li>
-            </ul>
+            <li class="map"><img src="./img/ILLUSTRATIONS/illustration-footer.svg" alt="picto Paris">
+            </li>
+            <li class="t2">Termes et conditions</li>
+        </ul>
         </ul>
     </footer>
 
     <script src="./libs/jquery_min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>
