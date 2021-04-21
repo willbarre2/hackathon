@@ -20,6 +20,7 @@ body {
 
 /* Navbar */
 /* ======================= */
+
 #btn-burger {
   display: none;
 }
@@ -47,6 +48,7 @@ body {
   text-decoration: none;
   font-family: "Rale", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--black);
+  transition: color 0.3s;
 }
 
 #menu li a:hover {
@@ -109,15 +111,15 @@ body {
     top: 20px;
     left: 20px;
     z-index: 4;
-    background: url(../img/icon_burger.svg);
+    background: url("../img/icon_burger.svg");
   }
 
   #btn-burger.is-closed {
-    background: url(../img/icon_burger.svg);
+    background: url("../img/icon_burger.svg");
   }
 
   #btn-burger.is-opened {
-    background: url(../img/icon_croix.svg);
+    background: url("../img/icon_croix.svg");
   }
 
   #menu {
@@ -185,7 +187,121 @@ body {
     height: 428px;
   }
 }
+#img-header {
+  position: absolute;
+  top: -26px;
+  left: 8rem;
+  width: 150px;
+  z-index: 2;
+}
 
+@media (max-width: 992px) {
+  .section1 {
+    margin-top: 6rem;
+  }
+  #img-header {
+    left: 4rem;
+  }
+
+  #cont-header {
+    width: 641px;
+    left: 8rem;
+  }
+
+  header h1 {
+    font-size: 80px;
+  }
+
+  header p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  #img-header {
+    position: relative;
+    left: 0;
+  }
+
+  #div-img-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #cont-header {
+    width: 550px;
+    left: 4rem;
+  }
+
+  header h1 {
+    font-size: 70px;
+  }
+
+  header p {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 576px) {
+  #img-header {
+    width: 100px;
+    left: -40px;
+  }
+
+  #cont-header {
+    width: 317px;
+    left: 4rem;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bg-header {
+    height: 60vh;
+  }
+
+  #cont-header {
+    width: 254px;
+    top: 15vw;
+    left: 2rem;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 338px) {
+  #img-header {
+    top: -6px;
+    width: 70px;
+  }
+
+  #cont-header {
+    width: 235px;
+    left: 2rem;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 9px;
+  }
+}
 /* Style général pour les sections */
 /* ====================================== */
 .section-container {
@@ -228,7 +344,7 @@ section:nth-child(2n) {
 /* Premiere section  */
 /* ==================== */
 .section1-container {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -431,7 +547,9 @@ section:nth-child(2n).section8 {
     display: inline-block;
     width: 30%;
   }
-
+  .section1 {
+    margin-top: 10rem;
+  }
   .box-img-mobile {
     display: none;
   }
