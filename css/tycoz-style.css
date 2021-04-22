@@ -297,11 +297,12 @@ section:nth-child(2n).section8 {
     display: inline-block;
     width: 30%;
   }
-  .section1 {
-    margin-top: 10rem;
-  }
+
   .box-img-mobile {
     display: none;
+  }
+  .section1-container {
+    margin-top: 10rem;
   }
   .section1-content-desktop {
     margin-left: 5%;
@@ -507,8 +508,8 @@ section:nth-child(2n).section8 {
 
 /* Correction effondrement section1 et nav */
 @media (min-width: 768px) and (max-width: 928px) {
-  .section1 {
-    margin-top: 6rem;
+  .section1-container {
+    margin-top: 8rem;
   }
 }
 
