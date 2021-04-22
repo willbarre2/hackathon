@@ -69,10 +69,33 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
-// let resizeCarousel = function () {
-//   window.innerWidth < 500 ? console.log("oui") : console.log("non");
-// };
-// window.addEventListener("resize", console.log(swiper.slidesPerView));
+var btns = document.querySelectorAll(".slider-btn");
+var paginationWrapper = document.querySelector(".pagination-wrapper");
+var bigDotContainer = document.querySelector(".big-dot-container");
+var littleDot = document.querySelector(".little-dot");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", btnClick);
+}
+
+function btnClick() {
+  if (this.classList.contains("swiper-button-prev")) {
+    paginationWrapper.classList.add("transition-prev");
+  } else {
+    paginationWrapper.classList.add("transition-next");
+  }
+
+  var timeout = setTimeout(cleanClasses, 500);
+}
+
+function cleanClasses() {
+  if (paginationWrapper.classList.contains("transition-next")) {
+    paginationWrapper.classList.remove("transition-next");
+  } else if (paginationWrapper.classList.contains("transition-prev")) {
+    paginationWrapper.classList.remove("transition-prev");
+  }
+}
+
 // Validation email
 // =========================
 
@@ -113,7 +136,7 @@ submitBtn.addEventListener("click", function (e) {
     emailInput.value = "";
     emailInput.blur();
   } else {
-    // email invalide: apparition du messagd d'erreur
+    // email invalide: apparition du message d'erreur
     // Set time ouf pour si l'utilsateur a rentré une mauvaise adresse alors que le message d'erreur existe deja
     setTimeout(function () {
       errorMessage.classList.remove("hidden");

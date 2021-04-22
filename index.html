@@ -14,9 +14,11 @@
 </head>
 
 <body>
-    <div class="newsletters-modal-container hidden">
-        <div class="newsletters-modal"><button class="close-modal">&times;</button>
-            <p>Merci pour votre inscription!</p>
+    <div class="newsletters-modal-container hidden ">
+        <div class="newsletters-modal">
+            <div class="newsletters-modal-img"><img src="img/PICTOGRAMMES/icones-newsletter-inscription.svg " alt="enveloppe newsletters"></div>
+            <p>Notre petite graine vous remercie!</p>
+            <button class="close-modal">&times;</button>
         </div>
     </div>
     <header>
@@ -49,6 +51,7 @@
         </section>
         <section id="recipe-slider">
             <h3>Réalisez nos bonnes recettes</h3>
+            <div class="pagination-wrapper">
             <!-- Slider main container -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -72,13 +75,24 @@
                         <div class="recipe-cards-img coming-soon">+</div>
                         <p>Recette à venir</p>
                     </div>
-
                 </div>
                 <!-- Add Pagination -->
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            
+            <div class="swiper-button-prev slider-btn"></div>
+            <div class="swiper-button-next slider-btn"></div>
+          
+                <div class="pagination-container">
+                  <div class="little-dot  little-dot--first"></div>
+                  <div class="little-dot">
+                    <div class="big-dot-container">
+                      <div class="big-dot"></div>
+                    </div>
+                  </div>
+                  <div class="little-dot  little-dot--last"></div>
+                </div>
+                
+              
+              </div>
         </section>
         <section id="label-section">
             <div class="logo-AB logo-bio"><img src="img/LOGOTYPES/AGRICULTURE BIOLOGIQUE/logoab.png"
