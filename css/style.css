@@ -1447,18 +1447,18 @@ header p {
   font-family: RaleB;
   color: var(--gris);
 }
-.swiper-container {
+#recipe-slider .swiper-container {
   width: 85%;
   max-width: 900px;
   height: 320px;
   margin-bottom: 1rem;
 }
 
-.swiper-wrapper {
+#recipe-slider .swiper-wrapper {
   align-items: center;
 }
 
-.swiper-slide {
+#recipe-slider .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1467,10 +1467,10 @@ header p {
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.35);
   transition: all 0.3s;
 }
-.swiper-slide-next {
+#recipe-slider .swiper-slide-next {
   transform: scale(1.1);
 }
-.swiper-slide p {
+#recipe-slider .swiper-slide p {
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: 800;
@@ -1510,8 +1510,8 @@ header p {
   text-decoration: none;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+#recipe-slider .swiper-button-next,
+#recipe-slider .swiper-button-prev {
   top: 60%;
   color: var(--orange);
 }
@@ -1519,7 +1519,7 @@ header p {
 /* ======== Slider Pagination========= */
 /* ============================================= */
 
-.pagination-wrapper {
+#recipe-slider .pagination-wrapper {
   font-size: 0;
   /* position: absolute; */
   /* top: 50%;
@@ -1874,7 +1874,7 @@ header p {
 /* ======================================= */
 
 @media (max-width: 54rem) {
-  .swiper-container {
+    #recipe-slider .swiper-container {
     margin-bottom: 0;
   }
   .newsletters-container {
@@ -1903,9 +1903,13 @@ header p {
   .submit-btn {
     right: -20px;
   }
-  .swiper-slide-next {
+  #recipe-slider .swiper-slide-next {
     transform: scale(1);
-  }
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
   #label-section {
     width: 60%;
     max-width: 300px;

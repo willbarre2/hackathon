@@ -33,9 +33,8 @@
 }
   
 .swiper-pagination {
-    margin-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    margin-bottom: 20px;
 }
   
 .swiper-pagination-bullet {
