@@ -193,7 +193,7 @@ body {
 .bg-header {
   width: 100%;
   height: 90vh;
-  background-image: url(../img/illustration-home.svg);
+  background-image: url(../img/illustration_home_onlinebio.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -205,13 +205,13 @@ body {
 }
 
 .bg-h-rec-quiche {
-  background-image: url(../img/illustration-recettequiche.jpg);
+  background-image: url(../img/illustration-recettequiche-V2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .bg-h-rec-carpaccio {
-  background-image: url(../img/illustration-recettecarpaccio.jpg);
+  background-image: url(../img/illustration-recettecarpaccio-V2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -284,7 +284,6 @@ header p {
   }
 
   #cont-header {
-    width: 550px;
     left: 4rem;
     width: 500px;
   }
@@ -358,14 +357,591 @@ header p {
   }
 }
 
-/* section 1 */
-section:first-child {
+/* ******** Home-Sect1 ********** */
+
+#home-sect1 h2 {
+  text-align: center;
+  padding-top: 2%;
+  font-size: 3.5rem;
+}
+#home-sect1 h3 {
+  padding: 20px 0;
+  font-size: 2rem;
+  color: var(--orange);
+  text-align: center;
+}
+.grid-picto h4 {
+  font-size: 1.8rem;
+  color: var(--orange);
+  padding: 0;
+  margin: 0;
+}
+.grid-picto p {
+  font-weight: bold;
+  text-align: start;
+  font-size: 1.2rem;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+#agribio p {
+  text-align: center;
+  margin-left: 5%;
+}
+#home-sect1 .picto-agri {
+  display: flex;
+}
+#home-sect1 .grid-picto {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px;
+  margin: 0 23% 3% 20%;
+}
+.picto-bio1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.picto-bio2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.picto-bio3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.picto-bio4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+.leg-bio1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.leg-bio2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.leg-bio3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.leg-bio4 {
+  grid-column: 2;
+  grid-row: 4;
+}
+#agribio {
+  grid-column: 4;
+  grid-row: 2;
+}
+#home-sect1 .tete {
+  border: 1px solid var(--orange);
+  width: 76%;
+  height: 20vh;
+  border-radius: 24px;
+  margin: 3% 12% 20px 12%;
+  display: flex;
+  align-items: center;
+}
+#home-sect1 .tete img {
+  padding-left: 5%;
+}
+#home-sect1 .tete p {
+  color: var(--gris);
+  font-size: 2rem;
+}
+#home-sect1 {
   width: 100%;
+  height: auto;
+}
+#home-sect1 img {
+  width: 120px;
+  padding-right: 10px;
+}
+#agribio img {
+  width: 750px;
 }
 
-#sect1h2 {
-  width: 100%;
+@media screen and (max-width: 1440px) {
+  #home-sect1 h2 {
+    font-size: 3em;
+  }
+  #home-sect1 .grid-picto {
+    margin: 0 6% 0 12%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #home-sect1 h2 {
+    font-size: 2.7em;
+    padding: 0 5%;
+  }
+  #home-sect1 .grid-picto {
+    margin: 0 10% 0 12%;
+  }
+  #agribio img {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #home-sect1 h2 {
+    font-size: 2.7em;
+    padding: 3% 5% 0 5%;
+  }
+  #home-sect1 .grid-picto {
+    margin: 0 10% 0 12%;
+  }
+  #agribio img {
+    width: 600px;
+  }
+  #home-sect1 .tete p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #home-sect1 .grid-picto {
+    margin: 0 10% 0 9%;
+  }
+  #agribio img {
+    width: 500px;
+  }
+  #agribio p {
+    margin-right: 20%;
+  }
+  #home-sect1 .tete p {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  #home-sect1 h2 {
+    font-size: 2.7em;
+    padding: 3% 5% 0 5%;
+  }
+  #home-sect1 .grid-picto {
+    margin: 0 5% 0 1%;
+  }
+  #agribio img {
+    padding-top: 5%;
+    width: 480px;
+  }
+  #home-sect1 .tete p {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #home-sect1 .grid-picto {
+    margin: 0 9% 0 14%;
+    grid-auto-rows: auto;
+  }
+  .picto-bio1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .picto-bio2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .picto-bio3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .picto-bio4 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .leg-bio1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .leg-bio2 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .leg-bio3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .leg-bio4 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  #agribio {
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+  #agribio p {
+    margin: 0 0 3% 10%;
+  }
+  #home-sect1 .tete p {
+    font-size: 1.5rem;
+  }
+  #home-sect1 .tete img {
+    width: 100px;
+    padding-left: 2%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #home-sect1 .grid-picto {
+    margin: 0 3% 0 3%;
+    grid-auto-rows: auto;
+  }
+  #home-sect1 h2 {
+    font-size: 2.3em;
+  }
+  #agribio img {
+    padding-left: 20%;
+    width: 400px;
+  }
+  #home-sect1 .tete {
+    height: 30vh;
+  }
+  #agribio p {
+    margin: 0 0 3% 34%;
+  }
+}
+@media screen and (max-width: 615px) {
+  #home-sect1 .grid-picto {
+    margin: 0 20% 0 20%;
+  }
+
+  .picto-bio1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .picto-bio2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .picto-bio3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .picto-bio4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .leg-bio1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .leg-bio2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .leg-bio3 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .leg-bio4 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  #agribio {
+    grid-column: 1/3;
+    grid-row: 5;
+  }
+  #agribio p {
+    margin: 0 0 3% 20%;
+  }
+  #agribio img {
+    padding: 0;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #home-sect1 .grid-picto {
+    margin: 0 10% 0 15%;
+  }
+  #home-sect1 .tete {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  #home-sect1 .grid-picto {
+    margin: 0 10% 0 10%;
+  }
+  #home-sect1 .tete p {
+    font-size: 1.2rem;
+  }
+  #agribio img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #agribio img {
+    width: 285px;
+  }
+  #agribio p {
+    margin: 0 0 3% 1%;
+  }
+}
+@media screen and (max-width: 340px) {
+  #home-sect1 .tete p {
+    font-size: 1rem;
+  }
+  #agribio img {
+    width: 250px;
+  }
+  #agribio2 img {
+    width: 250px;
+  }
+  #agribio p {
+    margin: 0 0 3% 1%;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  #home-sect1 .tete img {
+    width: 85px;
+  }
+}
+
+/* ******** Home-Sect2 ********** */
+
+#home-sect2 h2 {
   text-align: center;
+  padding-top: 2%;
+  font-size: 3.5rem;
+}
+#home-sect2 h3 {
+  padding: 40px 0;
+  font-size: 2rem;
+  color: var(--orange);
+  text-align: center;
+}
+.grid-picto2 h4 {
+  font-size: 1.4rem;
+  color: var(--orange);
+  padding: 0;
+  margin: 0;
+}
+.grid-picto2 p {
+  font-weight: bold;
+  text-align: start;
+  font-size: 1.2rem;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+#agribio2 p {
+  text-align: center;
+  margin-left: 15%2;
+}
+#home-sect2 .picto-agri1 {
+  display: flex;
+}
+#home-sect2 .grid-picto2 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px;
+  margin: 0 23% 3% 20%;
+}
+.picto-bio11 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.picto-bio21 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.picto-bio31 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.leg-bio11 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.leg-bio21 {
+  grid-column: 4;
+  grid-row: 2;
+}
+.leg-bio31 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+#agribio2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#home-sect2 {
+  background-color: #fff3e7;
+  width: 100%;
+  height: auto;
+}
+#home-sect2 img {
+  width: 120px;
+  padding-right: 10px;
+}
+#agribio2 img {
+  width: 750px;
+}
+
+@media screen and (max-width: 1440px) {
+  #home-sect2 h2 {
+    font-size: 3em;
+  }
+  #home-sect2 .grid-picto2 {
+    margin: 0 6% 0 12%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #home-sect2 h2 {
+    font-size: 2.7em;
+    padding: 0 5%;
+  }
+  #home-sect2 .grid-picto2 {
+    margin: 0 10% 0 9%;
+  }
+  #agribio2 img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #home-sect2 .grid-picto2 {
+    margin: 0 10% 0 6%;
+  }
+  #agribio2 img {
+    width: 500px;
+  }
+  #agribio2 p {
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #home-sect2 h2 {
+    font-size: 2.7em;
+    padding: 3% 5% 0 5%;
+  }
+  #home-sect2 .grid-picto2 {
+    margin: 0 5% 0 1%;
+  }
+  #agribio2 img {
+    padding-top: 5%;
+    width: 470px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #home-sect2 .grid-picto2 {
+    margin: 0 9% 0 14%;
+    grid-auto-rows: auto;
+  }
+  .picto-bio11 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .picto-bio21 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .picto-bio31 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .leg-bio11 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .leg-bio21 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .leg-bio31 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #agribio2 {
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+  #agribio2 p {
+    margin: 0 0 3% 10%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #home-sect2 .grid-picto2 {
+    margin: 0 3% 0 3%;
+    grid-auto-rows: auto;
+  }
+  #home-sect2 h2 {
+    font-size: 2.3em;
+  }
+  #agribio2 img {
+    padding-left: 20%;
+    width: 400px;
+  }
+  #agribio2 p {
+    margin: 0 0 3% 34%;
+  }
+}
+@media screen and (max-width: 615px) {
+  #home-sect2 .grid-picto2 {
+    margin: 0 20% 0 20%;
+  }
+
+  .picto-bio11 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .picto-bio21 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .picto-bio31 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .leg-bio11 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .leg-bio21 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .leg-bio31 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  #agribio2 {
+    grid-column: 1/3;
+    grid-row: 5;
+  }
+  #agribio2 p {
+    margin: 0 0 3% 20%;
+  }
+  #agribio2 img {
+    padding: 0;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #home-sect2 .grid-picto2 {
+    margin: 0 10% 0 15%;
+  }
+}
+@media screen and (max-width: 425px) {
+  #home-sect2 .grid-picto2 {
+    margin: 0 10% 0 10%;
+  }
+  #agribio2 img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #agribio2 img {
+    width: 285px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #agribio2 p {
+    margin: 0 0 3% 10%;
+  }
 }
 
 /* page nos producteurs */
@@ -450,7 +1026,7 @@ section:first-child {
   font-size: 30px;
 }
 
-/* ************** Section cards Recettes ******** */
+/* ************** Section cards ******** */
 
 .section-cards .cards {
   text-align: center;
@@ -468,7 +1044,7 @@ section:first-child {
   justify-content: center;
   margin: 0 44px 0 44px;
   background-color: var(--orange);
-  height: 450px;
+  height: auto;
   width: 320px;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
@@ -477,6 +1053,10 @@ section:first-child {
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   margin: 40px;
+}
+
+.section-cards .cards div a {
+  text-decoration: none;
 }
 
 .section-cards .cards img {
@@ -494,7 +1074,6 @@ section:first-child {
 
 .section-cards p {
   font-size: 1.5rem;
-  padding: 0 10px;
   margin: 0;
 }
 
@@ -512,123 +1091,13 @@ section:first-child {
   -o-transform: scale(1.02);
 }
 
-/* *********** Footer  *********** */
-footer li {
-  list-style: none;
-}
-
-footer {
-  color: white;
-  background-color: var(--black);
-  height: auto;
-  width: 100%;
-  padding-bottom: 10px;
-}
-
-footer .contact,
-.livraison {
-  display: block;
-  color: white;
-}
-
-footer .livraison {
-  width: 219px;
-  padding: 0 20px;
-}
-
-footer .livraison li {
-  line-height: 1.5em;
-  padding-top: 10px;
-}
-
-footer a:visited {
-  text-decoration: none;
-}
-
-footer .contact li {
-  padding-top: 14px;
-}
-
-footer .contact {
-  padding-top: 20px;
-}
-
-footer ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 50px;
-}
-
-footer p {
-  font-size: 15px;
-  padding-left: 0;
-}
-
-footer img {
-  height: 140px;
-  width: auto;
-}
-
-footer #icon img {
-  height: 30px;
-  padding-right: 15px;
-}
-
-footer #icon {
-  display: inline-flex;
-  padding: 0;
-}
-
-.map img {
-  height: 110px;
-}
-
-footer a {
-  color: white;
-}
-
-footer .t2 {
-  display: none;
-}
-
-@media screen and (max-width: 1014px) {
-  footer .livraison {
-    padding: 0;
-    width: auto;
+@media (max-width: 479px) {
+  .section-cards .cards div {
+    margin: 20px 0;
   }
 }
 
-@media screen and (max-width: 918px) {
-  footer ul,
-  footer li,
-  footer p {
-    display: block;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 10px;
-  }
-
-  footer .livraison {
-    width: auto;
-  }
-
-  footer #icon ul {
-    display: inline-flex;
-    padding: 0;
-  }
-
-  footer .t1 {
-    display: none;
-  }
-
-  footer .t2 {
-    display: block;
-  }
-}
-
-/******** Section Rec-carp ********* */
+/******** Section Rec-carp et rec-quiche ********* */
 .rec-carp .ingre img {
   height: 100px;
 }
@@ -912,15 +1381,18 @@ footer .t2 {
   .rec-carp .btq h2 {
     font-size: 1.5rem;
   }
+
   .panier img {
     height: 130px;
     padding-left: 10%;
   }
 }
+
 @media screen and (max-width: 427px) {
   .rec-carp .ingre div {
     width: 90px;
   }
+
   .rec-carp .ingre {
     padding: 0;
     margin: 0 20px;
@@ -929,6 +1401,7 @@ footer .t2 {
   .rec-carp .btq h2 {
     font-size: 1.5rem;
   }
+
   .panier img {
     height: 100px;
     padding-left: 10%;
@@ -939,6 +1412,7 @@ footer .t2 {
   .rec-carp .ingre div {
     width: 80px;
   }
+
   .rec-carp .ingre {
     padding: 0;
     margin: 0 15px;
@@ -947,10 +1421,12 @@ footer .t2 {
   .rec-carp .btq h2 {
     font-size: 1.2rem;
   }
+
   .panier img {
     height: 80px;
     padding-left: 10%;
   }
+
   #btn-boutique-recette a {
     padding: 14px 15px;
   }
@@ -1454,5 +1930,162 @@ footer .t2 {
   }
   .error-message {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  #btn-boutique-recette a {
+    padding: 7px 2px;
+  }
+}
+
+/* ************ Effet terre ********** */
+
+.clickTerre {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1000;
+  transform: scale(0);
+  border: 2px dashed rgb(0, 0, 0);
+  transform-origin: center;
+  animation: clickTerre 0.5s ease-in-out;
+}
+
+@keyframes clickTerre {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* *********** Footer  *********** */
+footer li {
+  list-style: none;
+}
+
+footer {
+  color: white;
+  background-color: var(--black);
+  height: auto;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+footer .contact,
+.livraison {
+  display: block;
+  color: white;
+}
+
+footer .livraison {
+  width: 219px;
+  padding: 0 20px;
+}
+
+footer .livraison li {
+  line-height: 1.5em;
+  padding-top: 10px;
+}
+
+footer a:visited {
+  text-decoration: none;
+}
+
+footer .contact li {
+  padding-top: 14px;
+}
+
+footer .contact {
+  padding-top: 20px;
+}
+
+footer ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+footer p {
+  font-size: 15px;
+  padding-left: 0;
+}
+
+footer img {
+  height: 140px;
+  width: auto;
+}
+
+footer #icon img {
+  height: 30px;
+  padding-right: 15px;
+}
+
+footer #icon {
+  display: inline-flex;
+  padding: 0;
+}
+
+.map img {
+  height: 110px;
+}
+
+footer a {
+  color: white;
+}
+
+footer .t1 a,
+footer .t2 a {
+  text-decoration: none;
+}
+
+footer .t2 {
+  display: none;
+}
+
+@media screen and (max-width: 1014px) {
+  footer .livraison {
+    padding: 0;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  footer ul,
+  footer li,
+  footer p {
+    display: block;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  footer .livraison {
+    width: auto;
+  }
+
+  footer #icon ul {
+    display: inline-flex;
+    padding: 0;
+  }
+
+  footer .t1 {
+    display: none;
+  }
+
+  footer .t2 {
+    display: block;
   }
 }
