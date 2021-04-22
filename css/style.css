@@ -1949,7 +1949,7 @@ header p {
   position: absolute;
   z-index: 1000;
   transform: scale(0);
-  border: 2px dashed rgb(0, 0, 0);
+  border: 2px dashed #924e27;
   transform-origin: center;
   animation: clickTerre 0.5s ease-in-out;
 }
