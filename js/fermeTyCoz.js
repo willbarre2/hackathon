@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper-container", {
+const swiperFerme = new Swiper(".swiper-container", {
   // Optional parameters
   direction: "horizontal",
   spaceBetween: 100,
