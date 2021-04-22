@@ -1432,7 +1432,7 @@ footer .t2 {
   }
   #label-section {
   width: 60%;
-  max-width: 300px;
+  max-width: 300px;}
 }
 
 @media (max-width: 31rem) {
@@ -1448,10 +1448,11 @@ footer .t2 {
   }
   .submit-btn{
     padding: 0.6rem 1rem;
-}
-.fa-exclamation-circle{
-  padding-right: 5px;
-}
-.error-message{
-  font-size: 1rem;
+    }
+    .fa-exclamation-circle{
+    padding-right: 5px;
+    }
+    .error-message{
+    font-size: 1rem;
+    }
 }
