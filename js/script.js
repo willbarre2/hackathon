@@ -29,3 +29,21 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+/****** test clickTerre ****** */
+
+window.addEventListener('click',(event) => {
+  // console.log(event);
+
+  const motte = document.createElement('div');
+  motte.className ='clickTerre'
+  motte.style.top = `${event.pageY - 15}px`;
+  motte.style.left = `${event.pageX - 15}px`;
+  document.body.appendChild(motte);
+
+  setTimeout(() => {
+    motte.remove()
+  },1500)
+})
