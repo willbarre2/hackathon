@@ -35,6 +35,11 @@ body {
   display: flex;
   justify-content: center;
   background-color: transparent;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
 #menu {
