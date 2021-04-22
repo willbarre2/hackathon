@@ -35,7 +35,21 @@ $(document).ready(function () {
 const swiper = new Swiper(".swiper-container", {
   // Optional parameters
   direction: "horizontal",
-  slidesPerView: 3,
+  slidesPerView: 1,
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    450: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    700: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
   spaceBetween: 30,
   // If we need pagination
   pagination: {
@@ -55,9 +69,13 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
+// let resizeCarousel = function () {
+//   window.innerWidth < 500 ? console.log("oui") : console.log("non");
+// };
+// window.addEventListener("resize", console.log(swiper.slidesPerView));
 // Validation email
 // =========================
-("strict mode");
+
 const submitBtn = document.querySelector(".submit-btn");
 const emailInput = document.querySelector(".newsletters-email");
 const errorMessage = document.querySelector(".error-message");

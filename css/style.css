@@ -961,8 +961,10 @@ footer .t2 {
 #recipe-slider {
   padding-top: 1rem;
   padding-bottom: 3rem;
-  background-color: #f48019;
   text-align: center;
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
 }
 #recipe-slider h3 {
   font-size: 2rem;
@@ -970,27 +972,32 @@ footer .t2 {
   color: var(--gris);
 }
 .swiper-container {
-  width: 75%;
+  width: 85%;
   max-width: 900px;
-  height: 300px;
+  height: 320px;
+}
+
+.swiper-wrapper {
+  align-items: center;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 90%;
-  min-width: 180px;
-  max-width: 250px;
-  /* Center slide text vertically */
+  height: 80%;
   padding-top: 10px;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s;
 }
-
+.swiper-slide-next {
+  transform: scale(1.1);
+}
 .swiper-slide p {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: 1rem;
   font-weight: 800;
+  margin-bottom: 1rem;
 }
 
 .recipe-cards-img {
@@ -1020,6 +1027,17 @@ footer .t2 {
   background-color: var(--gris);
 }
 
+.link-recipe {
+  cursor: pointer;
+  color: var(--gris);
+  text-decoration: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 60%;
+  color: var(--orange);
+}
 /* ==============Newsletters Section ==============*/
 /* ========================================== */
 
@@ -1112,29 +1130,37 @@ footer .t2 {
   border: 2px solid white;
   border-radius: 30px;
   font-weight: 600;
-  width: 50%;
+  width: 90%;
   min-width: 280px;
   height: 2rem;
   padding-left: 1rem;
   outline: none;
 }
+
 .newsletters-email::placeholder {
   color: #fff;
   font-weight: 400;
 }
-.newsletters-content button {
+
+.newsletters-content form {
+  position: relative;
+  max-width: 420px;
+}
+.submit-btn {
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 30px;
   color: var(--orange);
   padding: 0.6rem 2rem;
-  position: relative;
-  left: -50px;
+  position: absolute;
+  right: 0;
+  top: -2px;
   outline: none;
   transition: all 0.2s;
   cursor: pointer;
 }
-.newsletters-content button:hover {
+
+.submit-btn :hover {
   transform: scale(1.1);
 }
 
@@ -1150,8 +1176,40 @@ footer .t2 {
   padding-right: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 54rem) {
   .newsletters-container {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletters-content {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .newsletters-content {
+    text-align: center;
+  }
+  .newsletters-content form {
+    width: 86%;
+    margin: 0 auto;
+  }
+
+  .newsletters-email {
+    min-width: 100px;
+    width: 100%;
+  }
+
+  .submit-btn {
+    right: -20px;
+  }
+  .swiper-slide-next {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 31rem) {
+  .newsletters-email {
+    font-size: 0.8rem;
   }
 }
