@@ -2152,6 +2152,7 @@ footer .t2 {
 }
 
 #carotte-cont svg{
+    opacity: .35;
     transform: translateX(-3vw);
     -webkit-transform: translateX(-3vw);
     -moz-transform: translateX(-3vw);
@@ -2176,7 +2177,6 @@ footer .t2 {
 
 @media(max-width: 1440px){
     #carotte-cont svg{
-        opacity: .35;
         transform: translateX(-16vw);
         -webkit-transform: translateX(-16vw);
         -moz-transform: translateX(-16vw);
