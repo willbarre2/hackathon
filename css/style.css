@@ -367,6 +367,7 @@ header p {
     margin: 0;
 }
 .grid-picto p {
+    font-weight: bold;
     text-align: start;
     font-size: 1.2rem;
     color:black;
@@ -375,7 +376,7 @@ header p {
 }
 #agribio p{
     text-align: center;
-    margin-left: 15%;
+    margin-left: 5%;
 }
 #home-sect1 .picto-agri {
     display: flex;
@@ -440,7 +441,6 @@ header p {
     font-size: 2rem;
 }
 #home-sect1 {
-    background-color: #69f197;
     width: 100%;
     height: auto;
 }
@@ -653,15 +653,23 @@ header p {
         font-size: 1.2rem;
     }
     #agribio img {
-        width: 250px;
+        width: 300px;
      }
+ }
+ @media screen and (max-width : 375px) {
+    #agribio img {
+        width: 285px;
+     }
+     #agribio p {
+        margin: 0 0 3% 1%;
+    }
  }
  @media screen and (max-width : 340px) {
     #home-sect1 .tete p{
         font-size: 1rem;
     }
     #agribio p {
-        margin: 0 0 3% 10%;
+        margin: 0 0 3% 1%;
     }
  }
 
@@ -673,6 +681,7 @@ header p {
     font-size: 3.5rem;
 }
 #home-sect2 h3 {
+    padding-top: 20px;
     font-size: 2rem;
     color: var(--orange);
     text-align: center;
@@ -684,6 +693,7 @@ header p {
     margin: 0;
 }
 .grid-picto2 p {
+    font-weight: bold;
     text-align: start;
     font-size: 1.2rem;
     color:black;
@@ -736,7 +746,7 @@ header p {
 }
 
 #home-sect2 {
-    background-color: #a869f1;
+    background-color:#FFF3E7;
     width: 100%;
     height: auto;
 }
@@ -899,9 +909,14 @@ header p {
         margin: 0 10% 0 10%;
     } 
     #agribio2 img {
-        width: 250px;
+        width: 300px;
      }
  }
+ @media screen and (max-width : 375px) {
+    #agribio2 img {
+        width: 285px;
+     }
+}
  @media screen and (max-width : 340px) {
     #agribio2 p {
         margin: 0 0 3% 10%;
