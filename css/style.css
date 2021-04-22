@@ -207,13 +207,13 @@ body {
 }
 
 .bg-h-rec-quiche{
-    background-image: url(../img/illustration-recettequiche.jpg);
+    background-image: url(../img/illustration-recettequiche-V2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .bg-h-rec-carpaccio{
-    background-image: url(../img/illustration-recettecarpaccio.jpg);
+    background-image: url(../img/illustration-recettecarpaccio-V2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -601,6 +601,10 @@ footer #icon {
 
 footer a {
     color: white;
+}
+
+footer .t1 a, footer .t2 a{
+    text-decoration: none;
 }
 
 footer .t2 {
