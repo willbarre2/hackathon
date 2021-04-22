@@ -7,12 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home/Online-Bio</title>
     <link rel="stylesheet" href="./css/normalizer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a8a5f7edae.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+    <div class="newsletters-modal-container hidden ">
+        <div class="newsletters-modal">
+            <div class="newsletters-modal-img"><img src="img/PICTOGRAMMES/icones-newsletter-inscription.svg " alt="enveloppe newsletters"></div>
+            <p>Notre petite graine vous remercie!</p>
+            <button class="close-modal">&times;</button>
+        </div>
+    </div>
     <header>
         <div class="bg-header">
             <!-- navbarre  -->
@@ -205,7 +213,73 @@
                     </div>
                 </div>
         </section>
+        <section id="recipe-slider">
+            <h3>Réalisez nos bonnes recettes</h3>
+            <div class="pagination-wrapper">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="rec-carp.html" class="link-recipe"><div class="recipe-cards-img carpaccio"></div>
+                            <p>Carpaccio de tomates</p></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="rec-qui.html" class="link-recipe"><div class="recipe-cards-img quiche"></div>
+                            <p>Quiche Saumon Brocolis</p></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img coming-soon">+</div>
+                        <p>Recette à venir</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img coming-soon">+</div>
+                        <p>Recette à venir</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recipe-cards-img coming-soon">+</div>
+                        <p>Recette à venir</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+            </div>
+            <div class="swiper-button-prev slider-btn"></div>
+            <div class="swiper-button-next slider-btn"></div>
+          
+                <div class="pagination-container">
+                  <div class="little-dot  little-dot--first"></div>
+                  <div class="little-dot">
+                    <div class="big-dot-container">
+                      <div class="big-dot"></div>
+                    </div>
+                  </div>
+                  <div class="little-dot  little-dot--last"></div>
+                </div>
+                
+              
+              </div>
+        </section>
+        <section id="label-section">
+            <div class="logo-AB logo-bio"><img src="img/LOGOTYPES/AGRICULTURE BIOLOGIQUE/logoab.png"
+                    alt="logo Agriculture Biologique"></div>
+            <div class="logo-demeter logo-bio"><img src="img/LOGOTYPES/DEMETER/logoDemeter.jpg" alt="logo demeter">
+            </div>
+        </section>
+        <section id="newsletters-section">
+            <div class="newsletters-container">
+                <div class="newsletters-img"><img src="img/PICTOGRAMMES/icones-newsletter.svg" alt=""></div>
+                <div class="newsletters-content">
+                    <p class="newsletters-message">Pour recevoir la newsletter de notre petite graine!</p>
 
+
+                    <form action="" method="POST"><input class="newsletters-email" type="email"
+                            placeholder="Mon adresse mail" required><button class="submit-btn"><i
+                                class="fas fa-chevron-right"></i></button></form>
+                    <p class="error-message hidden"><i class="fas fa-exclamation-circle"></i>Veuillez rentrer un
+                        email-valide
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -239,8 +313,8 @@
     </footer>
 
     <script src="./libs/jquery_min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
-
 </body>
 
 </html>
