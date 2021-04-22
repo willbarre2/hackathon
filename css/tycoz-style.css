@@ -511,8 +511,8 @@ section:nth-child(2n).section8 {
   .section1-container {
     margin-top: 8rem;
   }
-}
 
-footer ul {
-  margin-top: 0;
+  footer ul {
+    margin-top: 0;
+  }
 }

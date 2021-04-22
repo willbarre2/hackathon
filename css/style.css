@@ -1431,28 +1431,28 @@ footer .t2 {
     transform: scale(1);
   }
   #label-section {
-  width: 60%;
-  max-width: 300px;
+    width: 60%;
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 31rem) {
   .newsletters-email {
     font-size: 0.8rem;
   }
-  
   .newsletters-modal {
     padding: 1rem;
   }
   .newsletters-modal p {
     font-size: 1.4rem;
   }
-  .submit-btn{
+  .submit-btn {
     padding: 0.6rem 1rem;
-}
-.fa-exclamation-circle{
-  padding-right: 5px;
-}
-.error-message{
-  font-size: 1rem;
-}
+  }
+  .fa-exclamation-circle {
+    padding-right: 5px;
+  }
+  .error-message {
+    font-size: 1rem;
+  }
 }
